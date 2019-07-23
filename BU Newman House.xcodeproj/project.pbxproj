@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578322E75DBF00D369EE /* AppDelegate.swift */; };
-		26AF578622E75DBF00D369EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578522E75DBF00D369EE /* SceneDelegate.swift */; };
-		26AF578822E75DBF00D369EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578722E75DBF00D369EE /* ViewController.swift */; };
-		26AF578B22E75DBF00D369EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AF578922E75DBF00D369EE /* Main.storyboard */; };
+		26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578722E75DBF00D369EE /* HomeViewController.swift */; };
 		26AF578D22E75DC100D369EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF578C22E75DC100D369EE /* Assets.xcassets */; };
 		26AF579022E75DC100D369EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AF578E22E75DC100D369EE /* LaunchScreen.storyboard */; };
+		26AF579822E761B800D369EE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF579722E761B800D369EE /* Colors.xcassets */; };
+		26AF579A22E7686B00D369EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AF579922E7686A00D369EE /* Main.storyboard */; };
+		26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF579B22E769E300D369EE /* CollectionViewCell.swift */; };
+		26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */; };
+		26AF57F722E7731D00D369EE /* Gotham Book Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57CA22E7731D00D369EE /* Gotham Book Regular.otf */; };
+		26AF57F822E7731D00D369EE /* Gotham-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57CB22E7731D00D369EE /* Gotham-XLight.otf */; };
+		26AF57F922E7731D00D369EE /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57CC22E7731D00D369EE /* Gotham-Thin.otf */; };
+		26AF57FA22E7731D00D369EE /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57CD22E7731D00D369EE /* Gotham-Black.otf */; };
+		26AF57FB22E7731D00D369EE /* Gotham-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57CE22E7731D00D369EE /* Gotham-XLightItalic.otf */; };
+		26AF57FC22E7731D00D369EE /* Gotham-UltraItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57CF22E7731D00D369EE /* Gotham-UltraItalic.otf */; };
+		26AF57FD22E7731D00D369EE /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D022E7731D00D369EE /* Gotham-Bold.otf */; };
+		26AF57FE22E7731D00D369EE /* gotham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D122E7731D00D369EE /* gotham.otf */; };
+		26AF57FF22E7731D00D369EE /* Gotham-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D222E7731D00D369EE /* Gotham-ThinItalic.otf */; };
+		26AF580022E7731D00D369EE /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D322E7731D00D369EE /* Gotham-Light.otf */; };
+		26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26AF578022E75DBF00D369EE /* BU Newman House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BU Newman House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AF578322E75DBF00D369EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26AF578522E75DBF00D369EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26AF578722E75DBF00D369EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		26AF578A22E75DBF00D369EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26AF578722E75DBF00D369EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		26AF578C22E75DC100D369EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26AF578F22E75DC100D369EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26AF579122E75DC100D369EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26AF579722E761B800D369EE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		26AF579922E7686A00D369EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		26AF579B22E769E300D369EE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		26AF57CA22E7731D00D369EE /* Gotham Book Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book Regular.otf"; sourceTree = "<group>"; };
+		26AF57CB22E7731D00D369EE /* Gotham-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-XLight.otf"; sourceTree = "<group>"; };
+		26AF57CC22E7731D00D369EE /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
+		26AF57CD22E7731D00D369EE /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		26AF57CE22E7731D00D369EE /* Gotham-XLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-XLightItalic.otf"; sourceTree = "<group>"; };
+		26AF57CF22E7731D00D369EE /* Gotham-UltraItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-UltraItalic.otf"; sourceTree = "<group>"; };
+		26AF57D022E7731D00D369EE /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		26AF57D122E7731D00D369EE /* gotham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gotham.otf; sourceTree = "<group>"; };
+		26AF57D222E7731D00D369EE /* Gotham-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-ThinItalic.otf"; sourceTree = "<group>"; };
+		26AF57D322E7731D00D369EE /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,68 @@
 		26AF578222E75DBF00D369EE /* BU Newman House */ = {
 			isa = PBXGroup;
 			children = (
+				26AF57C822E7731D00D369EE /* Supporting Files */,
+				26AF579B22E769E300D369EE /* CollectionViewCell.swift */,
 				26AF578322E75DBF00D369EE /* AppDelegate.swift */,
-				26AF578522E75DBF00D369EE /* SceneDelegate.swift */,
-				26AF578722E75DBF00D369EE /* ViewController.swift */,
-				26AF578922E75DBF00D369EE /* Main.storyboard */,
+				26AF578722E75DBF00D369EE /* HomeViewController.swift */,
+				26AF579722E761B800D369EE /* Colors.xcassets */,
 				26AF578C22E75DC100D369EE /* Assets.xcassets */,
+				26AF579922E7686A00D369EE /* Main.storyboard */,
 				26AF578E22E75DC100D369EE /* LaunchScreen.storyboard */,
 				26AF579122E75DC100D369EE /* Info.plist */,
+				26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */,
 			);
 			path = "BU Newman House";
+			sourceTree = "<group>";
+		};
+		26AF57C822E7731D00D369EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26AF57C922E7731D00D369EE /* Gotham */,
+				26AF57EC22E7731D00D369EE /* Firebase */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26AF57C922E7731D00D369EE /* Gotham */ = {
+			isa = PBXGroup;
+			children = (
+				26AF57CA22E7731D00D369EE /* Gotham Book Regular.otf */,
+				26AF57CB22E7731D00D369EE /* Gotham-XLight.otf */,
+				26AF57CC22E7731D00D369EE /* Gotham-Thin.otf */,
+				26AF57CD22E7731D00D369EE /* Gotham-Black.otf */,
+				26AF57CE22E7731D00D369EE /* Gotham-XLightItalic.otf */,
+				26AF57CF22E7731D00D369EE /* Gotham-UltraItalic.otf */,
+				26AF57D022E7731D00D369EE /* Gotham-Bold.otf */,
+				26AF57D122E7731D00D369EE /* gotham.otf */,
+				26AF57D222E7731D00D369EE /* Gotham-ThinItalic.otf */,
+				26AF57D322E7731D00D369EE /* Gotham-Light.otf */,
+				26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */,
+			);
+			path = Gotham;
+			sourceTree = "<group>";
+		};
+		26AF57EC22E7731D00D369EE /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				26AF57ED22E7731D00D369EE /* Prod */,
+				26AF57EF22E7731D00D369EE /* Dev */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		26AF57ED22E7731D00D369EE /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
+		26AF57EF22E7731D00D369EE /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dev;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +174,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = "Newman House at Binghamton University";
+				ORGANIZATIONNAME = "Newman House of Binghamton University";
 				TargetAttributes = {
 					26AF577F22E75DBF00D369EE = {
 						CreatedOnToolsVersion = 11.0;
@@ -125,9 +204,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */,
+				26AF57F722E7731D00D369EE /* Gotham Book Regular.otf in Resources */,
+				26AF57FA22E7731D00D369EE /* Gotham-Black.otf in Resources */,
+				26AF57F922E7731D00D369EE /* Gotham-Thin.otf in Resources */,
 				26AF579022E75DC100D369EE /* LaunchScreen.storyboard in Resources */,
+				26AF579822E761B800D369EE /* Colors.xcassets in Resources */,
+				26AF57FF22E7731D00D369EE /* Gotham-ThinItalic.otf in Resources */,
+				26AF57FE22E7731D00D369EE /* gotham.otf in Resources */,
+				26AF57FB22E7731D00D369EE /* Gotham-XLightItalic.otf in Resources */,
+				26AF57FD22E7731D00D369EE /* Gotham-Bold.otf in Resources */,
+				26AF57F822E7731D00D369EE /* Gotham-XLight.otf in Resources */,
+				26AF580022E7731D00D369EE /* Gotham-Light.otf in Resources */,
 				26AF578D22E75DC100D369EE /* Assets.xcassets in Resources */,
-				26AF578B22E75DBF00D369EE /* Main.storyboard in Resources */,
+				26AF57FC22E7731D00D369EE /* Gotham-UltraItalic.otf in Resources */,
+				26AF579A22E7686B00D369EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26AF578822E75DBF00D369EE /* ViewController.swift in Sources */,
+				26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */,
+				26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */,
 				26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */,
-				26AF578622E75DBF00D369EE /* SceneDelegate.swift in Sources */,
+				26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		26AF578922E75DBF00D369EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26AF578A22E75DBF00D369EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26AF578E22E75DC100D369EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,11 +371,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XU8E27A586;
 				INFOPLIST_FILE = "BU Newman House/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.binghamtonsa.newman.BU-Newman-House";
+				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,11 +390,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XU8E27A586;
 				INFOPLIST_FILE = "BU Newman House/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.binghamtonsa.newman.BU-Newman-House";
+				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
