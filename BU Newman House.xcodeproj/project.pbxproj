@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A749FE22EA2F5E00AEB763 /* Colors.xcassets */; };
+		26A74A0222EA312F00AEB763 /* NuclearLaunchCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A74A0122EA312F00AEB763 /* NuclearLaunchCodes.swift */; };
 		26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578322E75DBF00D369EE /* AppDelegate.swift */; };
 		26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578722E75DBF00D369EE /* HomeViewController.swift */; };
 		26AF578D22E75DC100D369EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF578C22E75DC100D369EE /* Assets.xcassets */; };
 		26AF579022E75DC100D369EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AF578E22E75DC100D369EE /* LaunchScreen.storyboard */; };
-		26AF579822E761B800D369EE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF579722E761B800D369EE /* Colors.xcassets */; };
 		26AF579A22E7686B00D369EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AF579922E7686A00D369EE /* Main.storyboard */; };
 		26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF579B22E769E300D369EE /* CollectionViewCell.swift */; };
 		26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */; };
@@ -26,16 +27,23 @@
 		26AF57FF22E7731D00D369EE /* Gotham-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D222E7731D00D369EE /* Gotham-ThinItalic.otf */; };
 		26AF580022E7731D00D369EE /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D322E7731D00D369EE /* Gotham-Light.otf */; };
 		26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */; };
+		26D4C1B022E9E28B00E496B0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1AF22E9E28B00E496B0 /* AboutViewController.swift */; };
+		26D4C1BA22E9E43600E496B0 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B322E9E43500E496B0 /* TestimonialViewController.swift */; };
+		26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B422E9E43500E496B0 /* EventsViewController.swift */; };
+		26D4C1BC22E9E43600E496B0 /* FaithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* FaithViewController.swift */; };
+		26D4C1BD22E9E43600E496B0 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */; };
+		26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26A749FE22EA2F5E00AEB763 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		26A74A0122EA312F00AEB763 /* NuclearLaunchCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuclearLaunchCodes.swift; sourceTree = "<group>"; };
 		26AF578022E75DBF00D369EE /* BU Newman House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BU Newman House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AF578322E75DBF00D369EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26AF578722E75DBF00D369EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		26AF578C22E75DC100D369EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26AF578F22E75DC100D369EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26AF579122E75DC100D369EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26AF579722E761B800D369EE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		26AF579922E7686A00D369EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		26AF579B22E769E300D369EE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
@@ -50,6 +58,12 @@
 		26AF57D222E7731D00D369EE /* Gotham-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-ThinItalic.otf"; sourceTree = "<group>"; };
 		26AF57D322E7731D00D369EE /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
 		26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
+		26D4C1AF22E9E28B00E496B0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		26D4C1B322E9E43500E496B0 /* TestimonialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		26D4C1B422E9E43500E496B0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		26D4C1B522E9E43600E496B0 /* FaithViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaithViewController.swift; sourceTree = "<group>"; };
+		26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26A74A0022EA311E00AEB763 /* PrivateFiles */ = {
+			isa = PBXGroup;
+			children = (
+				26A74A0122EA312F00AEB763 /* NuclearLaunchCodes.swift */,
+			);
+			path = PrivateFiles;
+			sourceTree = "<group>";
+		};
+		26A74A0322EA314300AEB763 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26AF579922E7686A00D369EE /* Main.storyboard */,
+				26AF578E22E75DC100D369EE /* LaunchScreen.storyboard */,
+				26AF579B22E769E300D369EE /* CollectionViewCell.swift */,
+				26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		26AF577722E75DBF00D369EE = {
 			isa = PBXGroup;
 			children = (
@@ -82,27 +115,25 @@
 		26AF578222E75DBF00D369EE /* BU Newman House */ = {
 			isa = PBXGroup;
 			children = (
-				26AF57C822E7731D00D369EE /* Supporting Files */,
-				26AF579B22E769E300D369EE /* CollectionViewCell.swift */,
-				26AF578322E75DBF00D369EE /* AppDelegate.swift */,
-				26AF578722E75DBF00D369EE /* HomeViewController.swift */,
-				26AF579722E761B800D369EE /* Colors.xcassets */,
-				26AF578C22E75DC100D369EE /* Assets.xcassets */,
-				26AF579922E7686A00D369EE /* Main.storyboard */,
-				26AF578E22E75DC100D369EE /* LaunchScreen.storyboard */,
-				26AF579122E75DC100D369EE /* Info.plist */,
-				26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */,
+				26AF57C822E7731D00D369EE /* SupportingFiles */,
+				26A74A0322EA314300AEB763 /* View */,
+				26D4C1BF22E9E47A00E496B0 /* Controller */,
 			);
 			path = "BU Newman House";
 			sourceTree = "<group>";
 		};
-		26AF57C822E7731D00D369EE /* Supporting Files */ = {
+		26AF57C822E7731D00D369EE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				26AF578322E75DBF00D369EE /* AppDelegate.swift */,
+				26AF579122E75DC100D369EE /* Info.plist */,
+				26A749FE22EA2F5E00AEB763 /* Colors.xcassets */,
+				26AF578C22E75DC100D369EE /* Assets.xcassets */,
+				26A74A0022EA311E00AEB763 /* PrivateFiles */,
 				26AF57C922E7731D00D369EE /* Gotham */,
 				26AF57EC22E7731D00D369EE /* Firebase */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		26AF57C922E7731D00D369EE /* Gotham */ = {
@@ -144,6 +175,20 @@
 			children = (
 			);
 			path = Dev;
+			sourceTree = "<group>";
+		};
+		26D4C1BF22E9E47A00E496B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26AF578722E75DBF00D369EE /* HomeViewController.swift */,
+				26D4C1AF22E9E28B00E496B0 /* AboutViewController.swift */,
+				26D4C1B522E9E43600E496B0 /* FaithViewController.swift */,
+				26D4C1B422E9E43500E496B0 /* EventsViewController.swift */,
+				26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */,
+				26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */,
+				26D4C1B322E9E43500E496B0 /* TestimonialViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,12 +249,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */,
 				26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */,
 				26AF57F722E7731D00D369EE /* Gotham Book Regular.otf in Resources */,
 				26AF57FA22E7731D00D369EE /* Gotham-Black.otf in Resources */,
 				26AF57F922E7731D00D369EE /* Gotham-Thin.otf in Resources */,
 				26AF579022E75DC100D369EE /* LaunchScreen.storyboard in Resources */,
-				26AF579822E761B800D369EE /* Colors.xcassets in Resources */,
 				26AF57FF22E7731D00D369EE /* Gotham-ThinItalic.otf in Resources */,
 				26AF57FE22E7731D00D369EE /* gotham.otf in Resources */,
 				26AF57FB22E7731D00D369EE /* Gotham-XLightItalic.otf in Resources */,
@@ -229,10 +274,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D4C1BD22E9E43600E496B0 /* StudentsViewController.swift in Sources */,
+				26A74A0222EA312F00AEB763 /* NuclearLaunchCodes.swift in Sources */,
 				26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */,
+				26D4C1BA22E9E43600E496B0 /* TestimonialViewController.swift in Sources */,
+				26D4C1BC22E9E43600E496B0 /* FaithViewController.swift in Sources */,
 				26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */,
 				26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */,
+				26D4C1B022E9E28B00E496B0 /* AboutViewController.swift in Sources */,
 				26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */,
+				26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */,
+				26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XU8E27A586;
 				INFOPLIST_FILE = "BU Newman House/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -376,6 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -388,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XU8E27A586;
 				INFOPLIST_FILE = "BU Newman House/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -395,6 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

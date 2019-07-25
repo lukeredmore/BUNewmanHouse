@@ -7,7 +7,7 @@ yarn-error.log*
 firebase-debug.log*
 
 # Private API keys
-CSBC/SupportingFiles/PrivateFiles/
+BU\ Newman\ House/SupportingFiles/PrivateFiles/
 
 # Firebase cache
 .firebase/
