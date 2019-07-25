@@ -14,7 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "gotham", size: 30)!,
+            NSAttributedString.Key.foregroundColor: UIColor(named: "systemTextLight")!
+        ]
+        UIBarButtonItem.appearance().setTitleTextAttributes([
+            NSAttributedString.Key.font: UIFont(name: "gotham", size: 20)!,
+            NSAttributedString.Key.foregroundColor: UIColor(named: "systemTextLight")!
+        ], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([
+            NSAttributedString.Key.font: UIFont(name: "gotham", size: 20)!,
+            NSAttributedString.Key.foregroundColor: UIColor(named: "systemTextLight")!
+        ], for: .highlighted)
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
+        
         return true
     }
 

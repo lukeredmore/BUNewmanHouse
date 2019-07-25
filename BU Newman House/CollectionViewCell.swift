@@ -1,6 +1,6 @@
 //
 //  CollectionViewCell.swift
-//  CSBC
+//  BU Newman House
 //
 //  Created by Luke Redmore on 7/23/19.
 //  Copyright © 2019 Newman House of Binghamton University. All rights reserved.

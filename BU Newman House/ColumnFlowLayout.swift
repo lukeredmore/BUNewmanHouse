@@ -12,7 +12,10 @@ class ColumnFlowLayout: UICollectionViewFlowLayout {
     
     var cellsPerRow: Int
     
-    init(cellsPerRow: Int, minimumInteritemSpacing: CGFloat = 0, minimumLineSpacing: CGFloat = 0, sectionInset: UIEdgeInsets = .zero) {
+    init(cellsPerRow: Int,
+         minimumInteritemSpacing: CGFloat = 0,
+         minimumLineSpacing: CGFloat = 0,
+         sectionInset: UIEdgeInsets = .zero) {
         self.cellsPerRow = cellsPerRow
         super.init()
         
