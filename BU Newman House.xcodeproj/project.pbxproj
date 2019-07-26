@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A72F9F22EA8AF9004A1B62 /* sampleJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */; };
+		26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A72FA022EA8D33004A1B62 /* EventsModel.swift */; };
 		26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A749FE22EA2F5E00AEB763 /* Colors.xcassets */; };
-		26A74A0222EA312F00AEB763 /* NuclearLaunchCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A74A0122EA312F00AEB763 /* NuclearLaunchCodes.swift */; };
+		26AD63FA22EA96FC00BAAC39 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */; };
+		26AD63FE22EAABA200BAAC39 /* PrivateAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD63FD22EAABA200BAAC39 /* PrivateAPIKeys.swift */; };
 		26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578322E75DBF00D369EE /* AppDelegate.swift */; };
 		26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF578722E75DBF00D369EE /* HomeViewController.swift */; };
 		26AF578D22E75DC100D369EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AF578C22E75DC100D369EE /* Assets.xcassets */; };
@@ -33,11 +36,15 @@
 		26D4C1BC22E9E43600E496B0 /* FaithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* FaithViewController.swift */; };
 		26D4C1BD22E9E43600E496B0 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */; };
 		26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */; };
+		44B711B56C99144E5A51FD75 /* Pods_BU_Newman_House.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleJSON.json; sourceTree = "<group>"; };
+		26A72FA022EA8D33004A1B62 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
 		26A749FE22EA2F5E00AEB763 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		26A74A0122EA312F00AEB763 /* NuclearLaunchCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuclearLaunchCodes.swift; sourceTree = "<group>"; };
+		26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		26AD63FD22EAABA200BAAC39 /* PrivateAPIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateAPIKeys.swift; sourceTree = "<group>"; };
 		26AF578022E75DBF00D369EE /* BU Newman House.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BU Newman House.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AF578322E75DBF00D369EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26AF578722E75DBF00D369EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +71,9 @@
 		26D4C1B522E9E43600E496B0 /* FaithViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaithViewController.swift; sourceTree = "<group>"; };
 		26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
+		620A88598F567194F1CF47BE /* Pods-BU Newman House.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU Newman House.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House.debug.xcconfig"; sourceTree = "<group>"; };
+		B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BU_Newman_House.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86542A63992E6B0ECE83E16 /* Pods-BU Newman House.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU Newman House.release.xcconfig"; path = "Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,16 +81,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B711B56C99144E5A51FD75 /* Pods_BU_Newman_House.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090DAE250540F107618255C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				620A88598F567194F1CF47BE /* Pods-BU Newman House.debug.xcconfig */,
+				B86542A63992E6B0ECE83E16 /* Pods-BU Newman House.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		26A74A0022EA311E00AEB763 /* PrivateFiles */ = {
 			isa = PBXGroup;
 			children = (
-				26A74A0122EA312F00AEB763 /* NuclearLaunchCodes.swift */,
+				26AD63FD22EAABA200BAAC39 /* PrivateAPIKeys.swift */,
 			);
 			path = PrivateFiles;
 			sourceTree = "<group>";
@@ -101,6 +121,8 @@
 			children = (
 				26AF578222E75DBF00D369EE /* BU Newman House */,
 				26AF578122E75DBF00D369EE /* Products */,
+				090DAE250540F107618255C9 /* Pods */,
+				43CCA368655F7EA6C6289C44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +137,7 @@
 		26AF578222E75DBF00D369EE /* BU Newman House */ = {
 			isa = PBXGroup;
 			children = (
+				26AF579122E75DC100D369EE /* Info.plist */,
 				26AF57C822E7731D00D369EE /* SupportingFiles */,
 				26A74A0322EA314300AEB763 /* View */,
 				26D4C1BF22E9E47A00E496B0 /* Controller */,
@@ -125,13 +148,12 @@
 		26AF57C822E7731D00D369EE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */,
 				26AF578322E75DBF00D369EE /* AppDelegate.swift */,
-				26AF579122E75DC100D369EE /* Info.plist */,
 				26A749FE22EA2F5E00AEB763 /* Colors.xcassets */,
 				26AF578C22E75DC100D369EE /* Assets.xcassets */,
 				26A74A0022EA311E00AEB763 /* PrivateFiles */,
 				26AF57C922E7731D00D369EE /* Gotham */,
-				26AF57EC22E7731D00D369EE /* Firebase */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -154,29 +176,6 @@
 			path = Gotham;
 			sourceTree = "<group>";
 		};
-		26AF57EC22E7731D00D369EE /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				26AF57ED22E7731D00D369EE /* Prod */,
-				26AF57EF22E7731D00D369EE /* Dev */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		26AF57ED22E7731D00D369EE /* Prod */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Prod;
-			sourceTree = "<group>";
-		};
-		26AF57EF22E7731D00D369EE /* Dev */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dev;
-			sourceTree = "<group>";
-		};
 		26D4C1BF22E9E47A00E496B0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,11 +183,21 @@
 				26D4C1AF22E9E28B00E496B0 /* AboutViewController.swift */,
 				26D4C1B522E9E43600E496B0 /* FaithViewController.swift */,
 				26D4C1B422E9E43500E496B0 /* EventsViewController.swift */,
+				26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */,
+				26A72FA022EA8D33004A1B62 /* EventsModel.swift */,
 				26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */,
 				26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */,
 				26D4C1B322E9E43500E496B0 /* TestimonialViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		43CCA368655F7EA6C6289C44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26AF579422E75DC100D369EE /* Build configuration list for PBXNativeTarget "BU Newman House" */;
 			buildPhases = (
+				39296FE0897AEED0BFE4E33D /* [CP] Check Pods Manifest.lock */,
 				26AF577C22E75DBF00D369EE /* Sources */,
 				26AF577D22E75DBF00D369EE /* Frameworks */,
 				26AF577E22E75DBF00D369EE /* Resources */,
+				9ABB20A3CE9F93A55664E965 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +263,7 @@
 				26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */,
 				26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */,
 				26AF57F722E7731D00D369EE /* Gotham Book Regular.otf in Resources */,
+				26A72F9F22EA8AF9004A1B62 /* sampleJSON.json in Resources */,
 				26AF57FA22E7731D00D369EE /* Gotham-Black.otf in Resources */,
 				26AF57F922E7731D00D369EE /* Gotham-Thin.otf in Resources */,
 				26AF579022E75DC100D369EE /* LaunchScreen.storyboard in Resources */,
@@ -269,13 +281,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39296FE0897AEED0BFE4E33D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BU Newman House-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ABB20A3CE9F93A55664E965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		26AF577C22E75DBF00D369EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				26D4C1BD22E9E43600E496B0 /* StudentsViewController.swift in Sources */,
-				26A74A0222EA312F00AEB763 /* NuclearLaunchCodes.swift in Sources */,
+				26AD63FE22EAABA200BAAC39 /* PrivateAPIKeys.swift in Sources */,
+				26AD63FA22EA96FC00BAAC39 /* EventsTableViewCell.swift in Sources */,
 				26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */,
 				26D4C1BA22E9E43600E496B0 /* TestimonialViewController.swift in Sources */,
 				26D4C1BC22E9E43600E496B0 /* FaithViewController.swift in Sources */,
@@ -284,6 +344,7 @@
 				26D4C1B022E9E28B00E496B0 /* AboutViewController.swift in Sources */,
 				26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */,
 				26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */,
+				26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */,
 				26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -406,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -418,6 +479,7 @@
 		};
 		26AF579522E75DC100D369EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 620A88598F567194F1CF47BE /* Pods-BU Newman House.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,7 +492,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,6 +501,7 @@
 		};
 		26AF579622E75DC100D369EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86542A63992E6B0ECE83E16 /* Pods-BU Newman House.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,7 +514,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = org.binghamtonsa.newman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

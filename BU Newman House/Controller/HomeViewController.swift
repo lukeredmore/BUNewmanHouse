@@ -24,6 +24,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.collectionViewLayout = columnLayout
         collectionView.contentInsetAdjustmentBehavior = .always
         collectionView.delegate = self
@@ -102,6 +103,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         performSegue(withIdentifier: "\(buttonTitles[indexPath.row].lowercased())Segue", sender: self)
         
     }
+    
+    
     
 }
 
