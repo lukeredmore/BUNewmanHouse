@@ -11,7 +11,7 @@ import SafariServices
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    let buttonTitles = ["About", "Faith", "Events", "Students", "Parents", "Testimonial"]
+    let buttonTitles = ["About", "Faith", "Events", "Register", "Parents", "Options"]
     
     var columnLayout = ColumnFlowLayout(
         cellsPerRow: 2,
@@ -40,18 +40,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     
-    //MARK: CollectionView DataSource Methods
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
-    }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCell
-        cell.displayContent(
-            image: UIImage(named: /*buttonTitles[indexPath.row]*/ "Contact")!,
-            title: buttonTitles[indexPath.row]
-        )
-        return cell
-    }
+    
     
     //MARK: Social Media Buttons
     @IBAction func instaButtonPressed(_ sender: Any) {
@@ -95,12 +84,37 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     
     
+    //MARK: CollectionView DataSource Methods
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCell
+        cell.displayContent(
+            image: UIImage(named: /*buttonTitles[indexPath.row].lowercased()*/ "About")!,
+            title: buttonTitles[indexPath.row]
+        )
+        return cell
+    }
+    
     
     //MARK: Delegate Methods
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print("\(buttonTitles[indexPath.row]) was selected")
-        performSegue(withIdentifier: "\(buttonTitles[indexPath.row].lowercased())Segue", sender: self)
+        if indexPath.row != 3 {
+            print("\(buttonTitles[indexPath.row]) was selected")
+            performSegue(withIdentifier: "\(buttonTitles[indexPath.row].lowercased())Segue", sender: self)
+        } else {
+            if let webURL = URL(string: "https://newman.binghamtonsa.org/wp2018/students/") {
+                let safariView = SFSafariViewController(url: webURL)
+                safariView.preferredBarTintColor = UIColor(named: "colorPrimary")!
+                safariView.preferredControlTintColor = UIColor(named: "systemTextLight")!
+                safariView.modalTransitionStyle = .coverVertical
+                safariView.modalPresentationStyle = .overCurrentContext
+                present(safariView, animated: true, completion: nil)
+            }
+        }
+        
         
     }
     

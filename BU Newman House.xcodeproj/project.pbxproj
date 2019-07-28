@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2624F1DD22EBD61D000832A7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1D922EBD61C000832A7 /* AboutViewController.swift */; };
+		2624F1DE22EBD61D000832A7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1DA22EBD61C000832A7 /* MapViewController.swift */; };
+		2624F1DF22EBD61D000832A7 /* AboutMailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1DB22EBD61D000832A7 /* AboutMailDelegate.swift */; };
+		2624F1E022EBD61D000832A7 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */; };
+		2624F1E322EBD63E000832A7 /* AboutMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1E122EBD63E000832A7 /* AboutMapCell.swift */; };
 		26A72F9F22EA8AF9004A1B62 /* sampleJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */; };
 		26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A72FA022EA8D33004A1B62 /* EventsModel.swift */; };
 		26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A749FE22EA2F5E00AEB763 /* Colors.xcassets */; };
@@ -30,16 +35,20 @@
 		26AF57FF22E7731D00D369EE /* Gotham-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D222E7731D00D369EE /* Gotham-ThinItalic.otf */; };
 		26AF580022E7731D00D369EE /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D322E7731D00D369EE /* Gotham-Light.otf */; };
 		26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */; };
-		26D4C1B022E9E28B00E496B0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1AF22E9E28B00E496B0 /* AboutViewController.swift */; };
-		26D4C1BA22E9E43600E496B0 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B322E9E43500E496B0 /* TestimonialViewController.swift */; };
+		26B714F622EBAC7500514B53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B714F522EBAC7500514B53 /* Extensions.swift */; };
+		26D4C1BA22E9E43600E496B0 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */; };
 		26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B422E9E43500E496B0 /* EventsViewController.swift */; };
 		26D4C1BC22E9E43600E496B0 /* FaithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* FaithViewController.swift */; };
-		26D4C1BD22E9E43600E496B0 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */; };
 		26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */; };
 		44B711B56C99144E5A51FD75 /* Pods_BU_Newman_House.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2624F1D922EBD61C000832A7 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2624F1DA22EBD61C000832A7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2624F1DB22EBD61D000832A7 /* AboutMailDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMailDelegate.swift; sourceTree = "<group>"; };
+		2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		2624F1E122EBD63E000832A7 /* AboutMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMapCell.swift; sourceTree = "<group>"; };
 		26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleJSON.json; sourceTree = "<group>"; };
 		26A72FA022EA8D33004A1B62 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
 		26A749FE22EA2F5E00AEB763 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -65,11 +74,10 @@
 		26AF57D222E7731D00D369EE /* Gotham-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-ThinItalic.otf"; sourceTree = "<group>"; };
 		26AF57D322E7731D00D369EE /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
 		26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
-		26D4C1AF22E9E28B00E496B0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		26D4C1B322E9E43500E496B0 /* TestimonialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		26B714F522EBAC7500514B53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B422E9E43500E496B0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B522E9E43600E496B0 /* FaithViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaithViewController.swift; sourceTree = "<group>"; };
-		26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
 		620A88598F567194F1CF47BE /* Pods-BU Newman House.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU Newman House.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House.debug.xcconfig"; sourceTree = "<group>"; };
 		B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BU_Newman_House.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +120,7 @@
 				26AF578E22E75DC100D369EE /* LaunchScreen.storyboard */,
 				26AF579B22E769E300D369EE /* CollectionViewCell.swift */,
 				26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */,
+				2624F1E122EBD63E000832A7 /* AboutMapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 				26AF578C22E75DC100D369EE /* Assets.xcassets */,
 				26A74A0022EA311E00AEB763 /* PrivateFiles */,
 				26AF57C922E7731D00D369EE /* Gotham */,
+				26B714F522EBAC7500514B53 /* Extensions.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -179,15 +189,17 @@
 		26D4C1BF22E9E47A00E496B0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2624F1DB22EBD61D000832A7 /* AboutMailDelegate.swift */,
+				2624F1D922EBD61C000832A7 /* AboutViewController.swift */,
+				2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */,
+				2624F1DA22EBD61C000832A7 /* MapViewController.swift */,
 				26AF578722E75DBF00D369EE /* HomeViewController.swift */,
-				26D4C1AF22E9E28B00E496B0 /* AboutViewController.swift */,
 				26D4C1B522E9E43600E496B0 /* FaithViewController.swift */,
 				26D4C1B422E9E43500E496B0 /* EventsViewController.swift */,
 				26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */,
 				26A72FA022EA8D33004A1B62 /* EventsModel.swift */,
-				26D4C1B622E9E43600E496B0 /* StudentsViewController.swift */,
 				26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */,
-				26D4C1B322E9E43500E496B0 /* TestimonialViewController.swift */,
+				26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,19 +345,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D4C1BD22E9E43600E496B0 /* StudentsViewController.swift in Sources */,
 				26AD63FE22EAABA200BAAC39 /* PrivateAPIKeys.swift in Sources */,
 				26AD63FA22EA96FC00BAAC39 /* EventsTableViewCell.swift in Sources */,
 				26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */,
-				26D4C1BA22E9E43600E496B0 /* TestimonialViewController.swift in Sources */,
+				26D4C1BA22E9E43600E496B0 /* OptionsViewController.swift in Sources */,
 				26D4C1BC22E9E43600E496B0 /* FaithViewController.swift in Sources */,
 				26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */,
 				26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */,
-				26D4C1B022E9E28B00E496B0 /* AboutViewController.swift in Sources */,
 				26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */,
 				26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */,
+				2624F1E022EBD61D000832A7 /* MapAnnotation.swift in Sources */,
 				26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */,
 				26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */,
+				2624F1E322EBD63E000832A7 /* AboutMapCell.swift in Sources */,
+				2624F1DF22EBD61D000832A7 /* AboutMailDelegate.swift in Sources */,
+				26B714F622EBAC7500514B53 /* Extensions.swift in Sources */,
+				2624F1DD22EBD61D000832A7 /* AboutViewController.swift in Sources */,
+				2624F1DE22EBD61D000832A7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XU8E27A586;
+				DEVELOPMENT_TEAM = NJ9N5G9YAQ;
 				INFOPLIST_FILE = "BU Newman House/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XU8E27A586;
+				DEVELOPMENT_TEAM = NJ9N5G9YAQ;
 				INFOPLIST_FILE = "BU Newman House/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
