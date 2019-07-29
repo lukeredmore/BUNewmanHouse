@@ -91,7 +91,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCell
         cell.displayContent(
-            image: UIImage(named: /*buttonTitles[indexPath.row].lowercased()*/ "About")!,
+            image: UIImage(named: buttonTitles[indexPath.row].lowercased())!,
             title: buttonTitles[indexPath.row]
         )
         return cell
