@@ -17,7 +17,6 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
     var imageView = UIImageView()
     
     let sectionHeaders = ["Map","Contact"]
-    let mapImageArray = ["setonMap","saintsMap","saintsMap","jamesMap"]
     
     
     override func viewDidLoad() {
@@ -59,7 +58,7 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
         switch indexPath.section {
         case 0:
             guard let mapCell = tableView.dequeueReusableCell(withIdentifier: "aboutMapCell") as? AboutMapCell else { return UITableViewCell() }
-            mapCell.mapImageView.image = UIImage(named: mapImageArray[0])
+            mapCell.mapImageView.image = UIImage(named: "mapthumbnail")
             mapCell.buildingLabel.text = "Newman House at Binghamton University"
             mapCell.addressLabel.text = "400 Murray Hill Road Vestal, NY 13850"
             return mapCell

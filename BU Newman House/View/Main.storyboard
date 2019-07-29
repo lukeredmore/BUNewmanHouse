@@ -61,7 +61,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotype" translatesAutoresizingMaskIntoConstraints="NO" id="Rfl-KV-Lbb">
-                                        <rect key="frame" x="15" y="10" width="384" height="130"/>
+                                        <rect key="frame" x="15" y="10" width="384" height="65"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                     </imageView>
                                 </subviews>
@@ -97,7 +97,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="About" translatesAutoresizingMaskIntoConstraints="NO" id="7Ik-Yd-d6u">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="7Ik-Yd-d6u">
                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Mk-yZ-Raw">
@@ -206,7 +206,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faithheader" translatesAutoresizingMaskIntoConstraints="NO" id="uph-sA-dcb">
-                                <rect key="frame" x="0.0" y="8" width="414" height="204"/>
+                                <rect key="frame" x="0.0" y="8" width="414.00000000000011" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uph-sA-dcb" secondAttribute="height" multiplier="69:34" id="UGj-nA-b2J"/>
                                 </constraints>
@@ -527,14 +527,14 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                 <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsTableViewCell" id="2qM-8l-rOP" customClass="EventsTableViewCell" customModule="BU_Newman_House" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2qM-8l-rOP" id="qu7-fd-sjL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="67.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sWG-Go-jNm">
-                                                    <rect key="frame" x="0.0" y="4" width="65" height="60"/>
+                                                    <rect key="frame" x="0.0" y="14" width="65" height="59.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-o8-Bvu">
                                                             <rect key="frame" x="0.0" y="0.0" width="65" height="40"/>
@@ -546,7 +546,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-1y-dXa">
-                                                            <rect key="frame" x="0.0" y="40" width="65" height="20"/>
+                                                            <rect key="frame" x="0.0" y="40" width="65" height="19.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
                                                             <color key="textColor" name="systemText"/>
                                                             <nil key="highlightedColor"/>
@@ -557,16 +557,16 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tvg-uH-kLJ">
-                                                    <rect key="frame" x="65" y="10" width="289" height="47.5"/>
+                                                    <rect key="frame" x="65" y="10" width="289" height="67"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fifty-Seventh Commencement" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qm6-47-zui">
-                                                            <rect key="frame" x="0.0" y="0.0" width="289" height="21.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="289" height="41"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
                                                             <color key="textColor" name="systemText"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0R-lP-6R9">
-                                                            <rect key="frame" x="0.0" y="26.5" width="289" height="21"/>
+                                                            <rect key="frame" x="0.0" y="46" width="289" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="02c-Bq-83O"/>
                                                             </constraints>
@@ -577,7 +577,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRC-nx-F2Z">
-                                                    <rect key="frame" x="354" y="6.5" width="55" height="55"/>
+                                                    <rect key="frame" x="354" y="16" width="55" height="55"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="55" id="KjL-mk-5rN"/>
                                                         <constraint firstAttribute="height" constant="55" id="cGc-kw-R6l"/>
@@ -902,7 +902,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         </scene>
     </scenes>
     <resources>
-        <image name="About" width="341" height="341"/>
+        <image name="about" width="341" height="341"/>
         <image name="bellselected" width="85" height="85"/>
         <image name="bellunselected" width="85" height="85"/>
         <image name="donateicon" width="950.5" height="949.5"/>
@@ -921,9 +921,6 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         </namedColor>
         <namedColor name="systemText">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="systemTextLight">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="systemTextLight">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

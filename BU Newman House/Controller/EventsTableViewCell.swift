@@ -52,22 +52,27 @@ class EventsTableViewCell: UITableViewCell {
             } else {
                 timeLabel.text = ""
             }
-            notificationButton.isEnabled = true
         } else {
             dayLabel.text = ""
             monthLabel.text = ""
             titleLabel.text = ""
             timeLabel.text = ""
-            notificationButton.isEnabled = false
         }
+        notificationButton.isEnabled = timeLabel.text != ""
     }
     
     @IBAction func notificationButtonToggled(_ sender: Any) {
         notificationButton.isSelected.toggle()
+        let controller = NotificationController()
         if notificationButton.isSelected {
             print("Notifications for event with id \(model.id) have been enabled.")
+            if model.startTime != nil {
+                controller.addNotification(title: model.title, body: "This event begins in 30 minutes!", date: model.startTime!, id: model.id)
+            }
+            
         } else {
             print("Notifications for event with id \(model.id) have been disabled.")
+            controller.removeNotification(withID: model.id)
         }
         //TODO - update UserDefaults, requeue notifications
         

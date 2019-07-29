@@ -30,6 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().shadowImage = UIImage()
         
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
+              (granted, error) in
+              if granted {
+                  print("Notification permisison granted")
+              } else {
+                  print("Notification permission denied")
+              }
+          }
         
         return true
     }
