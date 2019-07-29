@@ -193,9 +193,9 @@
         <!--Faith-->
         <scene sceneID="ANN-e5-lfZ">
             <objects>
-                <viewController title="Faith" id="Wwv-Mp-aHf" customClass="FaithViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Faith" id="Wwv-Mp-aHf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4z-MK-vwx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="712"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsQ-mg-SzF">
@@ -205,19 +205,307 @@
                                     <constraint firstAttribute="height" constant="8" id="lSa-Xm-5I3"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faithheader" translatesAutoresizingMaskIntoConstraints="NO" id="uph-sA-dcb">
+                                <rect key="frame" x="0.0" y="8" width="414" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uph-sA-dcb" secondAttribute="height" multiplier="69:34" id="UGj-nA-b2J"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvi-6J-8mF">
+                                <rect key="frame" x="0.0" y="212" width="414" height="500"/>
+                                <connections>
+                                    <segue destination="4i6-jx-I1R" kind="embed" identifier="" id="NRY-8A-xNw"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" name="systemBackground"/>
                         <constraints>
                             <constraint firstItem="JqV-oZ-tMd" firstAttribute="trailing" secondItem="VsQ-mg-SzF" secondAttribute="trailing" id="0yS-c5-mPW"/>
+                            <constraint firstItem="lvi-6J-8mF" firstAttribute="top" secondItem="uph-sA-dcb" secondAttribute="bottom" id="7Y9-Px-k6D"/>
                             <constraint firstItem="VsQ-mg-SzF" firstAttribute="leading" secondItem="X4z-MK-vwx" secondAttribute="leading" id="EYE-kZ-aUE"/>
+                            <constraint firstItem="lvi-6J-8mF" firstAttribute="leading" secondItem="JqV-oZ-tMd" secondAttribute="leading" id="Oqt-EF-Rkb"/>
+                            <constraint firstItem="uph-sA-dcb" firstAttribute="top" secondItem="VsQ-mg-SzF" secondAttribute="bottom" id="cBS-DO-NCm"/>
+                            <constraint firstItem="uph-sA-dcb" firstAttribute="leading" secondItem="JqV-oZ-tMd" secondAttribute="leading" id="clj-Z6-E7B"/>
+                            <constraint firstItem="lvi-6J-8mF" firstAttribute="trailing" secondItem="JqV-oZ-tMd" secondAttribute="trailing" id="g0G-6m-7f8"/>
+                            <constraint firstItem="JqV-oZ-tMd" firstAttribute="trailing" secondItem="uph-sA-dcb" secondAttribute="trailing" id="mjT-94-gXu"/>
                             <constraint firstItem="VsQ-mg-SzF" firstAttribute="top" secondItem="JqV-oZ-tMd" secondAttribute="top" id="uvw-9Y-G5h"/>
+                            <constraint firstItem="lvi-6J-8mF" firstAttribute="bottom" secondItem="JqV-oZ-tMd" secondAttribute="bottom" id="w5e-bJ-efM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JqV-oZ-tMd"/>
                     </view>
+                    <size key="freeformSize" width="414" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PeL-UQ-LSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335" y="-873"/>
+            <point key="canvasLocation" x="-336.23188405797106" y="-873.21428571428567"/>
+        </scene>
+        <!--Faith Table View Controller-->
+        <scene sceneID="kfV-Ha-Fu2">
+            <objects>
+                <tableViewController id="4i6-jx-I1R" customClass="FaithTableViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="SXu-dx-3DX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="tpn-kW-erN">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KZ-xd-6aQ">
+                                    <rect key="frame" x="8" y="0.0" width="398" height="194"/>
+                                    <string key="text">Our on-campus Sacramental Ministry (Mass) is located in the Newman House at 5:00 &amp; 7:00 pm on Sundays while college is in session.
+
+All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church located at 465 Clubhouse Road, Vestal NY 13850.</string>
+                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="3KZ-xd-6aQ" firstAttribute="top" secondItem="tpn-kW-erN" secondAttribute="top" id="Udk-Un-7iu"/>
+                                <constraint firstItem="3KZ-xd-6aQ" firstAttribute="leading" secondItem="tpn-kW-erN" secondAttribute="leadingMargin" id="ZMB-SO-5rk"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="3KZ-xd-6aQ" secondAttribute="trailing" id="fJ8-5t-1Wy"/>
+                                <constraint firstAttribute="bottom" secondItem="3KZ-xd-6aQ" secondAttribute="bottom" id="zgj-Eb-wSc"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection headerTitle="Mass Times" id="WHx-Dk-VV4">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="0Hi-N1-vOP">
+                                        <rect key="frame" x="0.0" y="249.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Hi-N1-vOP" id="KXW-dt-EJL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-RK-om2">
+                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday - 4:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-Kq-Gyc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOk-xY-yZX">
+                                                            <rect key="frame" x="246.5" y="0.0" width="104" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlv-V4-laC">
+                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="43.5" id="MTA-Ak-E0T"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="XwX-JS-BmV"/>
+                                                    </constraints>
+                                                    <state key="normal" image="bellunselected"/>
+                                                    <state key="selected" image="bellselected"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rlv-V4-laC" firstAttribute="leading" secondItem="Xao-RK-om2" secondAttribute="trailing" id="1nc-vC-Sb4"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rlv-V4-laC" secondAttribute="trailing" id="4Di-H9-IkG"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xao-RK-om2" secondAttribute="bottom" id="6ym-99-lGI"/>
+                                                <constraint firstItem="Xao-RK-om2" firstAttribute="leading" secondItem="KXW-dt-EJL" secondAttribute="leadingMargin" id="GUr-Iv-hBl"/>
+                                                <constraint firstItem="Rlv-V4-laC" firstAttribute="centerY" secondItem="KXW-dt-EJL" secondAttribute="centerY" id="LRf-2r-2Gc"/>
+                                                <constraint firstItem="Xao-RK-om2" firstAttribute="top" secondItem="KXW-dt-EJL" secondAttribute="top" id="TqI-DW-Xdc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="Rz4-iq-SFw">
+                                        <rect key="frame" x="0.0" y="293" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rz4-iq-SFw" id="RkH-hk-v8y">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-ZS-34I">
+                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 8:00 AM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5M0-zy-jTa">
+                                                            <rect key="frame" x="0.0" y="0.0" width="152.5" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awK-MQ-cfz">
+                                                            <rect key="frame" x="246.5" y="0.0" width="104" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFd-y8-w2O">
+                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="43.5" id="2nq-gV-Pgk"/>
+                                                        <constraint firstAttribute="width" constant="43.5" id="9l4-cq-eT7"/>
+                                                    </constraints>
+                                                    <state key="normal" image="bellunselected"/>
+                                                    <state key="selected" image="bellselected"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kFd-y8-w2O" firstAttribute="leading" secondItem="MhG-ZS-34I" secondAttribute="trailing" id="8Gy-3Q-MK6"/>
+                                                <constraint firstItem="MhG-ZS-34I" firstAttribute="leading" secondItem="RkH-hk-v8y" secondAttribute="leadingMargin" id="EWK-6A-gSJ"/>
+                                                <constraint firstItem="MhG-ZS-34I" firstAttribute="top" secondItem="RkH-hk-v8y" secondAttribute="top" id="FAG-C3-M6e"/>
+                                                <constraint firstAttribute="trailing" secondItem="kFd-y8-w2O" secondAttribute="trailing" id="K5B-gx-wZc"/>
+                                                <constraint firstAttribute="bottom" secondItem="MhG-ZS-34I" secondAttribute="bottom" id="kKl-LR-fd1"/>
+                                                <constraint firstItem="kFd-y8-w2O" firstAttribute="centerY" secondItem="RkH-hk-v8y" secondAttribute="centerY" id="veK-J0-9TT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="4od-Ph-zx6">
+                                        <rect key="frame" x="0.0" y="336.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4od-Ph-zx6" id="wrs-FI-v4h">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-Wr-z1z">
+                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 10:30 AM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk6-JW-2LC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="158.5" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-jO-ylM">
+                                                            <rect key="frame" x="246.5" y="0.0" width="104" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGS-I0-3GS">
+                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="43.5" id="Obk-bo-0jU"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="dmn-Bu-rny"/>
+                                                    </constraints>
+                                                    <state key="normal" image="bellunselected"/>
+                                                    <state key="selected" image="bellselected"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sGS-I0-3GS" firstAttribute="centerY" secondItem="wrs-FI-v4h" secondAttribute="centerY" id="2wK-ev-7vr"/>
+                                                <constraint firstItem="l0N-Wr-z1z" firstAttribute="top" secondItem="wrs-FI-v4h" secondAttribute="top" id="MBF-fK-gDv"/>
+                                                <constraint firstAttribute="trailing" secondItem="sGS-I0-3GS" secondAttribute="trailing" id="P1x-G3-nJ5"/>
+                                                <constraint firstItem="sGS-I0-3GS" firstAttribute="leading" secondItem="l0N-Wr-z1z" secondAttribute="trailing" id="U1K-HZ-Zvb"/>
+                                                <constraint firstAttribute="bottom" secondItem="l0N-Wr-z1z" secondAttribute="bottom" id="bXc-YF-qKk"/>
+                                                <constraint firstItem="l0N-Wr-z1z" firstAttribute="leading" secondItem="wrs-FI-v4h" secondAttribute="leadingMargin" id="lPA-Jb-4qN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="hsG-ZB-bAb">
+                                        <rect key="frame" x="0.0" y="380" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hsG-ZB-bAb" id="5a6-aW-ZjE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xLO-1u-tR7">
+                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 5:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g03-8I-jBC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newman House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="734-KT-okR">
+                                                            <rect key="frame" x="218" y="0.0" width="132.5" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZE-s8-waf">
+                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="43.5" id="EiM-1m-ihC"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="tfT-GE-n7k"/>
+                                                    </constraints>
+                                                    <state key="normal" image="bellunselected"/>
+                                                    <state key="selected" image="bellselected"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="xLO-1u-tR7" secondAttribute="bottom" id="9sc-Td-q6K"/>
+                                                <constraint firstItem="AZE-s8-waf" firstAttribute="centerY" secondItem="5a6-aW-ZjE" secondAttribute="centerY" id="Smn-7z-FpW"/>
+                                                <constraint firstItem="xLO-1u-tR7" firstAttribute="leading" secondItem="5a6-aW-ZjE" secondAttribute="leadingMargin" id="Z2f-U0-PtU"/>
+                                                <constraint firstItem="xLO-1u-tR7" firstAttribute="top" secondItem="5a6-aW-ZjE" secondAttribute="top" id="ZP4-Rm-mUG"/>
+                                                <constraint firstItem="AZE-s8-waf" firstAttribute="leading" secondItem="xLO-1u-tR7" secondAttribute="trailing" id="blU-NI-ucx"/>
+                                                <constraint firstAttribute="trailing" secondItem="AZE-s8-waf" secondAttribute="trailing" id="btA-5U-tmQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="m1H-eh-Mua">
+                                        <rect key="frame" x="0.0" y="423.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1H-eh-Mua" id="DfX-fN-7KS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Vb-Zv8">
+                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 7:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX6-69-WZ7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newman House" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vz-vq-Bc4">
+                                                            <rect key="frame" x="218" y="0.0" width="132.5" height="43.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECs-1V-Xw6">
+                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="43.5" id="5dC-7D-nfk"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="NPT-gH-zAX"/>
+                                                    </constraints>
+                                                    <state key="normal" image="bellunselected"/>
+                                                    <state key="selected" image="bellselected"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ZGq-Vb-Zv8" secondAttribute="bottom" id="GOI-jE-CRJ"/>
+                                                <constraint firstItem="ZGq-Vb-Zv8" firstAttribute="leading" secondItem="DfX-fN-7KS" secondAttribute="leadingMargin" id="GyX-tc-VDU"/>
+                                                <constraint firstItem="ECs-1V-Xw6" firstAttribute="centerY" secondItem="DfX-fN-7KS" secondAttribute="centerY" id="LYH-3f-eyo"/>
+                                                <constraint firstAttribute="trailing" secondItem="ECs-1V-Xw6" secondAttribute="trailing" id="SFD-nq-Ryd"/>
+                                                <constraint firstItem="ZGq-Vb-Zv8" firstAttribute="top" secondItem="DfX-fN-7KS" secondAttribute="top" id="ddo-IO-Gcw"/>
+                                                <constraint firstItem="ECs-1V-Xw6" firstAttribute="leading" secondItem="ZGq-Vb-Zv8" secondAttribute="trailing" id="dve-od-wP4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="4i6-jx-I1R" id="kRr-qJ-rsf"/>
+                            <outlet property="delegate" destination="4i6-jx-I1R" id="itt-Gl-Lpk"/>
+                        </connections>
+                    </tableView>
+                    <size key="freeformSize" width="414" height="800"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQe-LY-2AJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405.79710144927537" y="-873.88392857142856"/>
         </scene>
         <!--Events-->
         <scene sceneID="vdQ-bP-hfI">
@@ -619,6 +907,7 @@
         <image name="bellunselected" width="85" height="85"/>
         <image name="donateicon" width="950.5" height="949.5"/>
         <image name="facebookicon" width="950.5" height="949.5"/>
+        <image name="faithheader" width="416.5" height="204"/>
         <image name="instaicon" width="950.5" height="949.5"/>
         <image name="logotype" width="380" height="65"/>
         <namedColor name="colorPrimary">

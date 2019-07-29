@@ -102,7 +102,11 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        imageView.frame.size.height = -scrollView.contentOffset.y
+        imageView.frame = CGRect(
+                    x: 0,
+                    y: 8,
+                    width: UIScreen.main.bounds.size.width,
+                    height: -scrollView.contentOffset.y)
     }
     
 }

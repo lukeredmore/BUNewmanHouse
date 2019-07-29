@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension Date {
     
@@ -54,5 +55,15 @@ extension Date {
         let fmt = DateFormatter()
         fmt.dateFormat = "EEEE"
         return fmt.string(from: self)
+    }
+    
+}
+extension UIView {
+    func addShadow() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 0)
+        layer.shadowOpacity = 0.5
+        layer.shadowRadius = 5
+        //clipsToBounds = false
     }
 }
