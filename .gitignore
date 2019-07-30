@@ -9,6 +9,10 @@ firebase-debug.log*
 # Private API keys
 BU\ Newman\ House/SupportingFiles/PrivateFiles/
 
+# Playgrounds
+*.playground/
+*.pbxproj
+
 # Firebase cache
 .firebase/
 

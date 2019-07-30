@@ -13,7 +13,6 @@
 		2624F1E022EBD61D000832A7 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */; };
 		2624F1E322EBD63E000832A7 /* AboutMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1E122EBD63E000832A7 /* AboutMapCell.swift */; };
 		267037C922EE8B7200A57D0D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267037C822EE8B7200A57D0D /* NotificationController.swift */; };
-		26A72F9F22EA8AF9004A1B62 /* sampleJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */; };
 		26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A72FA022EA8D33004A1B62 /* EventsModel.swift */; };
 		26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A749FE22EA2F5E00AEB763 /* Colors.xcassets */; };
 		26AD63FA22EA96FC00BAAC39 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */; };
@@ -51,7 +50,6 @@
 		2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		2624F1E122EBD63E000832A7 /* AboutMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMapCell.swift; sourceTree = "<group>"; };
 		267037C822EE8B7200A57D0D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleJSON.json; sourceTree = "<group>"; };
 		26A72FA022EA8D33004A1B62 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
 		26A749FE22EA2F5E00AEB763 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 		26AF57C822E7731D00D369EE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				26A72F9E22EA8AF9004A1B62 /* sampleJSON.json */,
 				26AF578322E75DBF00D369EE /* AppDelegate.swift */,
 				26A749FE22EA2F5E00AEB763 /* Colors.xcassets */,
 				26AF578C22E75DC100D369EE /* Assets.xcassets */,
@@ -278,7 +275,6 @@
 				26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */,
 				26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */,
 				26AF57F722E7731D00D369EE /* Gotham Book Regular.otf in Resources */,
-				26A72F9F22EA8AF9004A1B62 /* sampleJSON.json in Resources */,
 				26AF57FA22E7731D00D369EE /* Gotham-Black.otf in Resources */,
 				26AF57F922E7731D00D369EE /* Gotham-Thin.otf in Resources */,
 				26AF579022E75DC100D369EE /* LaunchScreen.storyboard in Resources */,

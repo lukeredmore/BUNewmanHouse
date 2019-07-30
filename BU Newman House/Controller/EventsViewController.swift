@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import SwiftyJSON
 
+///Downloads, parses, and displays all the events from Breeze. Alert system controlled by cell itself and NotificationController, not here
 class EventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +25,7 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
     var queuedNotificationIDList : [String] = []
     
     
+    //MARK: View Control
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -34,20 +36,27 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
             loadingSymbol.style = .whiteLarge
             loadingSymbol.color = .gray
         }
-        getSampleJSONData() //requestEventsData()
+        requestEventsData()
     }
     
     
     //MARK: Data Methods
-    func requestEventsData() { //TODO: Add Newman API key
-        if let url = URL(string: "https://newman.breezechms.com/api/events") {
-            let request = NSMutableURLRequest(url: url)
-            request.setValue("KEY", forHTTPHeaderField: "X-Mashape-Key")
+    func requestEventsData() {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "yyyy-MM-dd"
+        let endDate = Calendar.current.date(byAdding: DateComponents(year: 1), to: Date())!
+        let tag = "?start=\(fmt.string(from: Date()))&end=\(fmt.string(from: endDate))"
+        print(tag)
+        if let url = URL(string: "https://newman.breezechms.com/api/events\(tag)") {
+            var request = URLRequest(url: url)
+            request.allHTTPHeaderFields = ["Content-Type": "application/json","api-key" : PrivateAPIKeys.BREEZE_API_KEY]
             request.httpMethod = "GET"
             let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
-                if (response as? HTTPURLResponse) != nil {
+                if response as? HTTPURLResponse != nil && data != nil {
                     self.parseEventsData(forJSON: JSON(data!))
                     self.setupTable()
+                } else if error != nil {
+                    print(error!)
                 }
             }
             loadingSymbol.startAnimating()
@@ -55,20 +64,20 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
     }
-    func parseEventsData(forJSON : JSON) {
+    func parseEventsData(forJSON json : JSON) {
         eventsArray.removeAll()
-        var monthToBeat = dateTimeFormatter.date(from: "\(forJSON["data"][0]["start_datetime"])")?.monthYearString()
+        var monthToBeat = dateTimeFormatter.date(from: "\(json[0]["start_datetime"])")?.monthYearString()
         var i = 0
         var loopEnabled = true
-        while i < forJSON["data"].count {
+        while i < json.count {
             var eventsArrayToAppend : [EventsModel] = []
-            while ((dateTimeFormatter.date(from: "\(forJSON["data"][i]["start_datetime"])")?.monthYearString())! == monthToBeat) && loopEnabled {
-                let title = "\(forJSON["data"][i]["name"])"
-                let startTime = dateTimeFormatter.date(from: "\(forJSON["data"][i]["start_datetime"])")
-                let endTime = dateTimeFormatter.date(from: "\(forJSON["data"][i]["end_datetime"])")
-                let id = "\(forJSON["data"][i]["id"])"
+            while ((dateTimeFormatter.date(from: "\(json[i]["start_datetime"])")?.monthYearString())! == monthToBeat) && loopEnabled {
+                let title = "\(json[i]["name"])"
+                let startTime = dateTimeFormatter.date(from: "\(json[i]["start_datetime"])")
+                let endTime = dateTimeFormatter.date(from: "\(json[i]["end_datetime"])")
+                let id = "\(json[i]["id"])"
                 eventsArrayToAppend.append(EventsModel(title: title, startTime: startTime, endTime: endTime, id: id))
-                if i < forJSON["data"].count - 1 {
+                if i < json.count - 1 {
                     i += 1
                 } else {
                     loopEnabled = false
@@ -76,27 +85,13 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
                 
             }
             eventsArray.append(eventsArrayToAppend)
-            monthToBeat = dateTimeFormatter.date(from: "\(forJSON["data"][i]["start_datetime"])")?.monthYearString()
+            monthToBeat = dateTimeFormatter.date(from: "\(json[i]["start_datetime"])")?.monthYearString()
             if !loopEnabled {
-                i = forJSON["data"].count
+                i = json.count
             }
         }
         
         print(eventsArray)
-    }
-    func getSampleJSONData() {
-        if let path = Bundle.main.path(forResource: "sampleJSON", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                let jsonObj = try JSON(data: data)
-                parseEventsData(forJSON: jsonObj)
-                setupTable()
-            } catch let error {
-                print("parse error: \(error.localizedDescription)")
-            }
-        } else {
-            print("Invalid filename/path.")
-        }
     }
     
     
@@ -124,13 +119,16 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
+    
     //MARK: TableView Methods
     func setupTable() {
         NotificationController().getPendingEventsNotifications(caller: self)
-        loadingSymbol.stopAnimating()
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.loadingSymbol.stopAnimating()
+            self.tableView.dataSource = self
+            self.tableView.delegate = self
+            self.tableView.reloadData()
+        }
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return eventsArray[section][0].startTime?.monthYearString()
@@ -152,8 +150,6 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
         guard let header = view as? UITableViewHeaderFooterView else { return }
         header.textLabel?.font = UIFont(name: "Gotham-Bold", size: 18)
     }
-    
-    
     
 }
 

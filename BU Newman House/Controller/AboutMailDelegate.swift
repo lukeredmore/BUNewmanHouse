@@ -10,7 +10,7 @@ import UIKit
 import MessageUI
 
 
-///Methods to display mail composer in Abouts view
+///Methods to display mail composer in About view
 class AboutMailDelegate: NSObject, MFMailComposeViewControllerDelegate {
     
     let parent : AboutViewController!
@@ -47,6 +47,4 @@ class AboutMailDelegate: NSObject, MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
-    
-    
 }
