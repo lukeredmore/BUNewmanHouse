@@ -71,11 +71,8 @@ class EventsTableViewCell: UITableViewCell {
             }
             
         } else {
-            print("Notifications for event with id \(model.id) have been disabled.")
             controller.removeNotification(withID: model.id)
         }
-        //TODO - update UserDefaults, requeue notifications
-        
     }
     
 

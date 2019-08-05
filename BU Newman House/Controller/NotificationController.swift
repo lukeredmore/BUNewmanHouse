@@ -9,9 +9,13 @@
 import Foundation
 import UserNotifications
 
+protocol PendingNotificationDelegate: class {
+    func configureAlerts(forIDList : [String])
+}
+
 class NotificationController {
     
-    func getPendingEventsNotifications(caller : EventsViewController) {
+    func getPendingEventsNotifications(delegate : PendingNotificationDelegate) {
         UNUserNotificationCenter.current().getPendingNotificationRequests(completionHandler: { requests in
             var idList : [String] = []
             print("\nHere are the pending notification requests:")
@@ -20,7 +24,7 @@ class NotificationController {
                 idList.append(request.identifier)
             }
             print("end of requests\n")
-            caller.configureAlerts(forIDList: idList)
+            delegate.configureAlerts(forIDList: idList)
         })
         
     }
@@ -42,7 +46,24 @@ class NotificationController {
         //                print("Today is \(date). Today is \(notificationContent).")
     }
     
+    func addWeeklyNotification(model: MassDataModel) {
+        let content = UNMutableNotificationContent()
+        content.title = model.title
+        content.body = "Mass begins in 30 minutes!"
+        content.sound = UNNotificationSound.default
+        
+        var dateComponents = DateComponents()
+        dateComponents.hour = model.hour
+        dateComponents.minute = model.minute
+        dateComponents.weekday = model.weekday
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let request = UNNotificationRequest(identifier: model.id, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
     func removeNotification(withID id: String) {
+       print("removing notification with id: \(id)")
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [id])
     }
 }

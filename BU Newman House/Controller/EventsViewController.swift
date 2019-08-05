@@ -11,7 +11,7 @@ import WebKit
 import SwiftyJSON
 
 ///Downloads, parses, and displays all the events from Breeze. Alert system controlled by cell itself and NotificationController, not here
-class EventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class EventsViewController: UIViewController, PendingNotificationDelegate, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingSymbol: UIActivityIndicatorView!
@@ -122,7 +122,7 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
     
     //MARK: TableView Methods
     func setupTable() {
-        NotificationController().getPendingEventsNotifications(caller: self)
+        NotificationController().getPendingEventsNotifications(delegate: self)
         DispatchQueue.main.async {
             self.loadingSymbol.stopAnimating()
             self.tableView.dataSource = self

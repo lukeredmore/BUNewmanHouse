@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LwB-at-VgE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LwB-at-VgE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Gotham Book Regular.otf">
@@ -246,7 +245,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="SXu-dx-3DX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="tpn-kW-erN">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
@@ -262,7 +261,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="3KZ-xd-6aQ" firstAttribute="top" secondItem="tpn-kW-erN" secondAttribute="top" id="Udk-Un-7iu"/>
                                 <constraint firstItem="3KZ-xd-6aQ" firstAttribute="leading" secondItem="tpn-kW-erN" secondAttribute="leadingMargin" id="ZMB-SO-5rk"/>
@@ -305,6 +304,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
+                                                    <connections>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="BFe-YK-G9j"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -349,6 +351,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
+                                                    <connections>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="gk0-Dg-96W"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -393,6 +398,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
+                                                    <connections>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="Smh-Xa-6jy"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -437,6 +445,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
+                                                    <connections>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="G7d-Uf-Tvi"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -481,6 +492,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
+                                                    <connections>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="2PG-MS-4uJ"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -502,6 +516,13 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                         </connections>
                     </tableView>
                     <size key="freeformSize" width="414" height="800"/>
+                    <connections>
+                        <outletCollection property="notificationButton" destination="Rlv-V4-laC" collectionClass="NSMutableArray" id="ags-My-Opl"/>
+                        <outletCollection property="notificationButton" destination="kFd-y8-w2O" collectionClass="NSMutableArray" id="Wsv-MW-ZMH"/>
+                        <outletCollection property="notificationButton" destination="sGS-I0-3GS" collectionClass="NSMutableArray" id="OlL-cQ-PAX"/>
+                        <outletCollection property="notificationButton" destination="AZE-s8-waf" collectionClass="NSMutableArray" id="Bem-Wq-Z62"/>
+                        <outletCollection property="notificationButton" destination="ECs-1V-Xw6" collectionClass="NSMutableArray" id="Yfl-ij-sLx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQe-LY-2AJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -524,7 +545,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jcf-Ra-eP4">
                                 <rect key="frame" x="0.0" y="8" width="414" height="800"/>
-                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsTableViewCell" id="2qM-8l-rOP" customClass="EventsTableViewCell" customModule="BU_Newman_House" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="87"/>
@@ -571,7 +592,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                                 <constraint firstAttribute="height" constant="21" id="02c-Bq-83O"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Gotham-BookItalic" family="Gotham" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="secondaryLabelColor"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -718,7 +739,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2019 Newman House of Binghamton University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bq7-bo-fbb">
                                             <rect key="frame" x="37" y="0.0" width="340" height="23"/>
                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="secondaryLabelColor"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -738,18 +759,18 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vAn-uY-jjk">
-                                                    <rect key="frame" x="110" y="20" width="244.5" height="66.5"/>
+                                                    <rect key="frame" x="110" y="22" width="244.5" height="62"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PnV-cN-0nw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="244.5" height="22.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="244.5" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70 Seminary Avenue Binghamton, NY 13905" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKx-Xz-xtP">
-                                                            <rect key="frame" x="0.0" y="26.5" width="244.5" height="40"/>
+                                                            <rect key="frame" x="0.0" y="25.5" width="244.5" height="36.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="secondaryLabelColor"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -921,6 +942,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         </namedColor>
         <namedColor name="systemText">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="systemTextLight">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="systemTextLight">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
