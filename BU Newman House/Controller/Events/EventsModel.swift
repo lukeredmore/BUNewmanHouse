@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct EventsModel {
+struct EventsModel : Codable {
     let title : String
     let startTime : Date?
     let endTime : Date?

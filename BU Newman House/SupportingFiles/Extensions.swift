@@ -56,6 +56,11 @@ extension Date {
         fmt.dateFormat = "EEEE"
         return fmt.string(from: self)
     }
+    func dateStringWithTime() -> String {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "MM/dd/yyyy HH:mm:ss"
+        return fmt.string(from: self)
+    }
     
 }
 extension UIView {
@@ -65,5 +70,13 @@ extension UIView {
         layer.shadowOpacity = 0.5
         layer.shadowRadius = 5
         //clipsToBounds = false
+    }
+}
+
+extension String {
+    func toDateWithTime() -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy HH:mm:ss"
+        return dateFormatter.date(from: self)
     }
 }

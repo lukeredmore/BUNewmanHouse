@@ -41,6 +41,7 @@
 		26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B422E9E43500E496B0 /* EventsViewController.swift */; };
 		26D4C1BC22E9E43600E496B0 /* FaithTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */; };
 		26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */; };
+		26D5B3972300391A00CF010F /* EventsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B3962300391A00CF010F /* EventsRetriever.swift */; };
 		44B711B56C99144E5A51FD75 /* Pods_BU_Newman_House.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		26D4C1B422E9E43500E496B0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaithTableViewController.swift; sourceTree = "<group>"; };
 		26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
+		26D5B3962300391A00CF010F /* EventsRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRetriever.swift; sourceTree = "<group>"; };
 		620A88598F567194F1CF47BE /* Pods-BU Newman House.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU Newman House.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House.debug.xcconfig"; sourceTree = "<group>"; };
 		B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BU_Newman_House.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86542A63992E6B0ECE83E16 /* Pods-BU Newman House.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU Newman House.release.xcconfig"; path = "Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,14 +199,23 @@
 				26AF578722E75DBF00D369EE /* HomeViewController.swift */,
 				26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */,
 				26B790D722F88C02008E824A /* MassDataModel.swift */,
-				26D4C1B422E9E43500E496B0 /* EventsViewController.swift */,
-				26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */,
-				26A72FA022EA8D33004A1B62 /* EventsModel.swift */,
+				26D5B395230037EF00CF010F /* Events */,
 				26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */,
 				26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */,
 				267037C822EE8B7200A57D0D /* NotificationController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		26D5B395230037EF00CF010F /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				26D4C1B422E9E43500E496B0 /* EventsViewController.swift */,
+				26AD63F922EA96FC00BAAC39 /* EventsTableViewCell.swift */,
+				26A72FA022EA8D33004A1B62 /* EventsModel.swift */,
+				26D5B3962300391A00CF010F /* EventsRetriever.swift */,
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 		43CCA368655F7EA6C6289C44 /* Frameworks */ = {
@@ -356,6 +367,7 @@
 				267037C922EE8B7200A57D0D /* NotificationController.swift in Sources */,
 				26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */,
 				26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */,
+				26D5B3972300391A00CF010F /* EventsRetriever.swift in Sources */,
 				26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */,
 				2624F1E022EBD61D000832A7 /* MapAnnotation.swift in Sources */,
 				26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */,
