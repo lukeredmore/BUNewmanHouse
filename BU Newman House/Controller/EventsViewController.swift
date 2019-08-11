@@ -113,7 +113,7 @@ class EventsViewController: UIViewController, PendingNotificationDelegate, UITab
             }
             
         }
-        DispatchQueue.main.async() {
+        DispatchQueue.main.async {
             self.tableView.reloadData()
         }
         

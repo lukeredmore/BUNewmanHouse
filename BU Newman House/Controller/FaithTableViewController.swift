@@ -20,18 +20,18 @@ class FaithTableViewController: UITableViewController, PendingNotificationDelega
     
     var imageView = UIImageView()
     let imageHeight = 0.4904*UIScreen.main.bounds.width
+    let controller = NotificationController()
     
     @IBOutlet var notificationButton: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationController().getPendingEventsNotifications(delegate: self)
+        controller.getPendingEventsNotifications(delegate: self)
     }
     
     @IBAction func notificationButtonToggled(_ sender: UIButton) {
         if let model = massTimesModel[sender.tag] {
             sender.isSelected.toggle()
-            let controller = NotificationController()
             if sender.isSelected {
                 print("Notifications for event with id \(model.id) have been enabled.")
                 controller.addWeeklyNotification(model: model)
@@ -42,8 +42,10 @@ class FaithTableViewController: UITableViewController, PendingNotificationDelega
         
     }
     func configureAlerts(forIDList : [String]) {
-        for button in notificationButton {
-                button.isSelected = forIDList.contains(massTimesModel[button.tag]?.id ?? "false")
+        DispatchQueue.main.async {
+            for button in self.notificationButton {
+                button.isSelected = forIDList.contains(self.massTimesModel[button.tag]?.id ?? "false")
+            }
         }
     }
 }

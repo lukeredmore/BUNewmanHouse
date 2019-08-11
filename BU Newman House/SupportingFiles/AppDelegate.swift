@@ -17,15 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = [
             NSAttributedString.Key.font: UIFont(name: "gotham", size: 30)!,
-            NSAttributedString.Key.foregroundColor: UIColor(named: "systemTextLight")!
+            NSAttributedString.Key.foregroundColor: UIColor.white
         ]
         UIBarButtonItem.appearance().setTitleTextAttributes([
             NSAttributedString.Key.font: UIFont(name: "gotham", size: 20)!,
-            NSAttributedString.Key.foregroundColor: UIColor(named: "systemTextLight")!
+            NSAttributedString.Key.foregroundColor: UIColor.white
         ], for: .normal)
         UIBarButtonItem.appearance().setTitleTextAttributes([
             NSAttributedString.Key.font: UIFont(name: "gotham", size: 20)!,
-            NSAttributedString.Key.foregroundColor: UIColor(named: "systemTextLight")!
+            NSAttributedString.Key.foregroundColor: UIColor.white
         ], for: .highlighted)
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().shadowImage = UIImage()
