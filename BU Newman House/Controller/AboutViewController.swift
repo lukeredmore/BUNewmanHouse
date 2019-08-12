@@ -1,6 +1,6 @@
 //
-//  AboutContainerViewController.swift
-//  CSBC
+//  AboutViewController.swift
+//  BU Newman House
 //
 //  Created by Luke Redmore on 3/23/19.
 //  Copyright © 2019 Newman House of Binghamton University. All rights reserved.

@@ -42,6 +42,8 @@
 		26D4C1BC22E9E43600E496B0 /* FaithTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */; };
 		26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */; };
 		26D5B3972300391A00CF010F /* EventsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B3962300391A00CF010F /* EventsRetriever.swift */; };
+		26D5B3992300641300CF010F /* ModalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B3982300641300CF010F /* ModalMenuViewController.swift */; };
+		26D5B39B2300655F00CF010F /* ModalPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */; };
 		44B711B56C99144E5A51FD75 /* Pods_BU_Newman_House.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaithTableViewController.swift; sourceTree = "<group>"; };
 		26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
 		26D5B3962300391A00CF010F /* EventsRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRetriever.swift; sourceTree = "<group>"; };
+		26D5B3982300641300CF010F /* ModalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMenuViewController.swift; sourceTree = "<group>"; };
+		26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPickerViewController.swift; sourceTree = "<group>"; };
 		620A88598F567194F1CF47BE /* Pods-BU Newman House.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU Newman House.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House.debug.xcconfig"; sourceTree = "<group>"; };
 		B80661F318CE7B7FB4043DF2 /* Pods_BU_Newman_House.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BU_Newman_House.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86542A63992E6B0ECE83E16 /* Pods-BU Newman House.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU Newman House.release.xcconfig"; path = "Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				26AF579B22E769E300D369EE /* CollectionViewCell.swift */,
 				26AF57C622E771BC00D369EE /* ColumnFlowLayout.swift */,
 				2624F1E122EBD63E000832A7 /* AboutMapCell.swift */,
+				26D5B3982300641300CF010F /* ModalMenuViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				26D5B395230037EF00CF010F /* Events */,
 				26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */,
 				26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */,
+				26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */,
 				267037C822EE8B7200A57D0D /* NotificationController.swift */,
 			);
 			path = Controller;
@@ -360,9 +366,11 @@
 			files = (
 				26AD63FE22EAABA200BAAC39 /* PrivateAPIKeys.swift in Sources */,
 				26AD63FA22EA96FC00BAAC39 /* EventsTableViewCell.swift in Sources */,
+				26D5B3992300641300CF010F /* ModalMenuViewController.swift in Sources */,
 				26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */,
 				26D4C1BA22E9E43600E496B0 /* OptionsViewController.swift in Sources */,
 				26D4C1BC22E9E43600E496B0 /* FaithTableViewController.swift in Sources */,
+				26D5B39B2300655F00CF010F /* ModalPickerViewController.swift in Sources */,
 				26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */,
 				267037C922EE8B7200A57D0D /* NotificationController.swift in Sources */,
 				26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */,

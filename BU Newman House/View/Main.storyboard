@@ -28,10 +28,10 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="colorPrimary"/>
-                        <color key="tintColor" name="systemTextLight"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" name="colorPrimary"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="systemTextLight"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kDQ-yz-X30">
@@ -245,8 +245,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="SXu-dx-3DX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="tpn-kW-erN">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -695,7 +694,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         <!--Options-->
         <scene sceneID="6cF-le-G1z">
             <objects>
-                <viewController title="Options" id="RNT-tA-6Om" customClass="OptionsViewController" sceneMemberID="viewController">
+                <viewController title="Options" id="RNT-tA-6Om" customClass="OptionsViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NW1-TD-FGx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -707,15 +706,62 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                     <constraint firstAttribute="height" constant="8" id="rlS-wT-KKU"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="EV7-EJ-JGa">
+                                <rect key="frame" x="0.0" y="8" width="414" height="800"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="alertTimeCell" textLabel="196-I4-K5q" style="IBUITableViewCellStyleDefault" id="qDh-Lz-rwg">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="45.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qDh-Lz-rwg" id="m1k-Go-Rfd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="30 minutes before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="196-I4-K5q">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="45.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="19"/>
+                                                    <color key="textColor" name="systemText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="addAnotherCell" textLabel="7iL-Sw-cd8" style="IBUITableViewCellStyleDefault" id="RBl-dy-gN2">
+                                        <rect key="frame" x="0.0" y="101" width="414" height="45.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RBl-dy-gN2" id="Rdy-zb-Po3">
+                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="+ Add Another" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7iL-Sw-cd8">
+                                                    <rect key="frame" x="20" y="0.0" width="354.5" height="45.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="19"/>
+                                                    <color key="textColor" name="colorDarkGray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" name="systemBackground"/>
                         <constraints>
+                            <constraint firstItem="EV7-EJ-JGa" firstAttribute="leading" secondItem="cCq-Te-asr" secondAttribute="leading" id="Ag5-Kh-1pA"/>
+                            <constraint firstItem="cCq-Te-asr" firstAttribute="trailing" secondItem="EV7-EJ-JGa" secondAttribute="trailing" id="WFp-IZ-jS5"/>
                             <constraint firstItem="cCq-Te-asr" firstAttribute="trailing" secondItem="kzM-W2-rCH" secondAttribute="trailing" id="g8x-bU-qYg"/>
+                            <constraint firstItem="EV7-EJ-JGa" firstAttribute="top" secondItem="kzM-W2-rCH" secondAttribute="bottom" id="hd1-lj-2Hc"/>
                             <constraint firstItem="kzM-W2-rCH" firstAttribute="top" secondItem="cCq-Te-asr" secondAttribute="top" id="pVB-Ya-2N8"/>
+                            <constraint firstAttribute="bottom" secondItem="EV7-EJ-JGa" secondAttribute="bottom" id="yd7-Iu-iV2"/>
                             <constraint firstItem="kzM-W2-rCH" firstAttribute="leading" secondItem="NW1-TD-FGx" secondAttribute="leading" id="ytA-sd-71b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cCq-Te-asr"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="EV7-EJ-JGa" id="beo-qj-Yaj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uir-ww-NfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -736,7 +782,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                     <rect key="frame" x="0.0" y="223" width="414" height="36"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2019 Newman House of Binghamton University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bq7-bo-fbb">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2019 Newman House of Binghamton University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bq7-bo-fbb">
                                             <rect key="frame" x="37" y="0.0" width="340" height="23"/>
                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                                             <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -921,6 +967,50 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
             </objects>
             <point key="canvasLocation" x="-2346" y="-415"/>
         </scene>
+        <!--Modal Picker View Controller-->
+        <scene sceneID="cJQ-Ga-fIc">
+            <objects>
+                <viewController storyboardIdentifier="ModalPickerViewScene" title="Modal Picker View Controller" id="68z-26-hIV" customClass="ModalPickerViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K5h-Og-hy7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-VQ-3Ev">
+                                <rect key="frame" x="0.0" y="680" width="414" height="216"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgH-AM-PKO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                        <color key="backgroundColor" name="viewFlipside"/>
+                                    </pickerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="5Fs-Au-IOI"/>
+                                    <constraint firstItem="cgH-AM-PKO" firstAttribute="top" secondItem="zSm-VQ-3Ev" secondAttribute="top" id="6Li-ro-4j7"/>
+                                    <constraint firstAttribute="bottom" secondItem="cgH-AM-PKO" secondAttribute="bottom" id="m6u-i4-lLx"/>
+                                    <constraint firstAttribute="trailing" secondItem="cgH-AM-PKO" secondAttribute="trailing" id="suf-er-FkI"/>
+                                    <constraint firstItem="cgH-AM-PKO" firstAttribute="leading" secondItem="zSm-VQ-3Ev" secondAttribute="leading" id="x2z-K2-cnn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zSm-VQ-3Ev" firstAttribute="top" secondItem="K5h-Og-hy7" secondAttribute="top" priority="999" constant="369" id="FXw-GI-JbJ"/>
+                            <constraint firstAttribute="bottom" secondItem="zSm-VQ-3Ev" secondAttribute="bottom" id="No1-Nc-L4V"/>
+                            <constraint firstItem="zSm-VQ-3Ev" firstAttribute="leading" secondItem="AjC-gh-Tgz" secondAttribute="leading" id="dVz-d5-ps3"/>
+                            <constraint firstItem="AjC-gh-Tgz" firstAttribute="trailing" secondItem="zSm-VQ-3Ev" secondAttribute="trailing" id="zAq-lk-bML"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AjC-gh-Tgz"/>
+                    </view>
+                    <connections>
+                        <outlet property="dayPicker" destination="cgH-AM-PKO" id="hbr-kX-wfi"/>
+                        <outlet property="menuView" destination="zSm-VQ-3Ev" id="ejJ-ao-T7K"/>
+                        <outlet property="menuViewHeightConstraint" destination="5Fs-Au-IOI" id="i2S-Zl-5dB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPR-7S-XQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375" y="5131"/>
+        </scene>
     </scenes>
     <resources>
         <image name="about" width="341" height="341"/>
@@ -931,6 +1021,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         <image name="faithheader" width="416.5" height="204"/>
         <image name="instaicon" width="950.5" height="949.5"/>
         <image name="logotype" width="380" height="65"/>
+        <namedColor name="colorDarkGray">
+            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="colorPrimary">
             <color red="0.0" green="0.35294117647058826" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -946,7 +1039,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         <namedColor name="systemTextLight">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="systemTextLight">
+        <namedColor name="viewFlipside">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

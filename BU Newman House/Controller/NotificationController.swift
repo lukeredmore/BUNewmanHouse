@@ -18,12 +18,14 @@ class NotificationController {
     func getPendingEventsNotifications(delegate : PendingNotificationDelegate) {
         UNUserNotificationCenter.current().getPendingNotificationRequests(completionHandler: { requests in
             var idList : [String] = []
-            print("\nHere are the pending notification requests:")
+            print(" ")
+            print("Here are the pending notification requests:")
             for request in requests {
-                print(request)
+                print("\(request.content.title) with ID: ", request.identifier)
                 idList.append(request.identifier)
             }
-            print("end of requests\n")
+            print("end of requests")
+            print(" ")
             delegate.configureAlerts(forIDList: idList)
         })
         
@@ -35,36 +37,46 @@ class NotificationController {
         content.body = body
         content.sound = UNNotificationSound.default
         
-        //WHEN
-        let halfHourPriorDate = Calendar.current.date(byAdding: .minute, value: -30, to: date)
-        let dateComponents = Calendar.current.dateComponents([.hour, .year, .minute, .day, .calendar, .second], from: halfHourPriorDate!)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        let alertTimes = UserDefaults.standard.array(forKey: "eventAlertTimes") as? [Int] ?? [30]
         
-        //REQUEST
-        let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-        //                print("Today is \(date). Today is \(notificationContent).")
+        for time in alertTimes {
+            //WHEN
+            let halfHourPriorDate = Calendar.current.date(byAdding: .minute, value: -time, to: date)
+            let dateComponents = Calendar.current.dateComponents([.hour, .year, .minute, .day, .calendar, .second], from: halfHourPriorDate!)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+            
+            //REQUEST
+            let request = UNNotificationRequest(identifier: "\(id)-\(time)", content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        }
     }
     
-    func addWeeklyNotification(model: MassDataModel) {
+    func addWeeklyNotification(forMassModel model: MassDataModel) {
         let content = UNMutableNotificationContent()
         content.title = model.title
-        content.body = "Mass begins in 30 minutes!"
+        content.body = "Mass begins soon!"
         content.sound = UNNotificationSound.default
         
-        var dateComponents = DateComponents()
-        dateComponents.hour = model.hour
-        dateComponents.minute = model.minute
-        dateComponents.weekday = model.weekday
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let alertTimes = UserDefaults.standard.array(forKey: "eventAlertTimes") as? [Int] ?? [30]
         
-        let request = UNNotificationRequest(identifier: model.id, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        for time in alertTimes {
+            var dateComponents = DateComponents()
+            dateComponents.hour = model.hour
+            dateComponents.minute = model.minute - time
+            dateComponents.weekday = model.weekday
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+            let request = UNNotificationRequest(identifier: "\(model.id)-\(time)", content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+        }
+        
+        
     }
     
     func removeNotification(withID id: String) {
-       print("removing notification with id: \(id)")
-        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [id])
+        print("removing notification with id: \(id)")
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["\(id)", "\(id)-0", "\(id)-5", "\(id)-15", "\(id)-30", "\(id)-60", "\(id)-120", "\(id)-1440", "\(id)-2880", "\(id)-10080"])
     }
 }
 

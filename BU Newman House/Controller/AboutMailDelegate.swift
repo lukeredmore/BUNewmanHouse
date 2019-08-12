@@ -1,5 +1,5 @@
 //
-//  AboutTableViewDelegate.swift
+//  AboutMailDelegate.swift
 //  BU Newman House
 //
 //  Created by Luke Redmore on 7/6/19.

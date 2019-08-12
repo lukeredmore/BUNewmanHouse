@@ -56,7 +56,7 @@ class EventsViewController: UIViewController, PendingNotificationDelegate, UITab
             var markForDeletion = true
             for month in eventsArray {
                 for event in month {
-                    if id == event.id || event.id.contains("newman") || event.id.contains("vincent") {
+                    if id.contains(event.id) || id.contains("newman") || id.contains("vincent") {
                         markForDeletion = false
                     }
                 }
@@ -100,7 +100,12 @@ class EventsViewController: UIViewController, PendingNotificationDelegate, UITab
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "eventsTableViewCell") as? EventsTableViewCell else { return UITableViewCell() }
         let model = eventsArray[indexPath.section][indexPath.row]
         cell.addDataForEventsModel(model)
-        cell.notificationButton.isSelected = queuedNotificationIDList.contains(model.id)
+        for each in queuedNotificationIDList {
+            if each.contains(model.id) {
+                cell.notificationButton.isSelected = true
+                return cell
+            }
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {

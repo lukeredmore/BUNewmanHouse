@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  BU Newman House
 //
 //  Created by Luke Redmore on 7/23/19.

@@ -53,9 +53,12 @@ class EventsTableViewCell: UITableViewCell {
         notificationButton.isSelected.toggle()
         let controller = NotificationController()
         if notificationButton.isSelected {
-            print("Notifications for event with id \(model.id) have been enabled.")
-            if model.startTime != nil {
-                controller.addNotification(title: model.title, body: "This event begins in 30 minutes!", date: model.startTime!, id: model.id)
+            if let startTime = model.startTime {
+                print("Notifications for event with id \(model.id) have been enabled.")
+                let formatter = DateFormatter()
+                formatter.dateFormat = "h:mm a"
+                let titleString = "\(model.title) - \(formatter.string(from: startTime))"
+                controller.addNotification(title: titleString, body: "This event begins soon!", date: startTime, id: model.id)
             }
             
         } else {
