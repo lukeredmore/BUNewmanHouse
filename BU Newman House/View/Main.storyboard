@@ -57,30 +57,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMD-ev-QMq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotype" translatesAutoresizingMaskIntoConstraints="NO" id="Rfl-KV-Lbb">
-                                        <rect key="frame" x="15" y="10" width="384" height="130"/>
+                                        <rect key="frame" x="15" y="10" width="384" height="57"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYo-BT-NAU">
+                                        <rect key="frame" x="57.5" y="72" width="299" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="299" id="Av5-3O-Skb"/>
+                                            <constraint firstAttribute="height" constant="56" id="KKw-IC-77o"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Catholic Church Community At Binghamton University">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="21" name="Gotham-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="colorPrimary"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="T9f-AF-Xlq"/>
+                                    <constraint firstItem="yYo-BT-NAU" firstAttribute="top" secondItem="Rfl-KV-Lbb" secondAttribute="bottom" constant="5" id="442-BB-jql"/>
+                                    <constraint firstItem="yYo-BT-NAU" firstAttribute="centerX" secondItem="hMD-ev-QMq" secondAttribute="centerX" id="H7e-Zy-0gT"/>
+                                    <constraint firstAttribute="height" constant="110" id="T9f-AF-Xlq"/>
                                     <constraint firstAttribute="trailing" secondItem="Rfl-KV-Lbb" secondAttribute="trailing" constant="15" id="UOc-Vt-eKy"/>
                                     <constraint firstItem="Rfl-KV-Lbb" firstAttribute="top" secondItem="hMD-ev-QMq" secondAttribute="top" constant="10" id="W34-rC-Y6d"/>
                                     <constraint firstItem="Rfl-KV-Lbb" firstAttribute="leading" secondItem="hMD-ev-QMq" secondAttribute="leading" constant="15" id="ZRn-Li-De7"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-77-Qcg">
-                                <rect key="frame" x="0.0" y="95" width="414" height="14"/>
+                                <rect key="frame" x="0.0" y="110" width="414" height="14"/>
                                 <color key="backgroundColor" name="colorPrimaryDark"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="yyL-Mv-djg"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="msb-Z9-Q3w">
-                                <rect key="frame" x="0.0" y="109" width="414" height="699"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="684"/>
                                 <color key="backgroundColor" name="systemBackground"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7rZ-5a-Du4">
                                     <size key="itemSize" width="80" height="120"/>
@@ -178,9 +197,9 @@
                     <navigationItem key="navigationItem" id="Kgk-57-0er"/>
                     <connections>
                         <outlet property="collectionView" destination="msb-Z9-Q3w" id="t4Z-Pm-nnv"/>
-                        <segue destination="Wwv-Mp-aHf" kind="show" identifier="faithSegue" id="GCR-x2-36d"/>
+                        <segue destination="Wwv-Mp-aHf" kind="show" identifier="worshipSegue" id="GCR-x2-36d"/>
                         <segue destination="z89-FU-QgP" kind="show" identifier="eventsSegue" id="DjO-Kr-izA"/>
-                        <segue destination="GuD-tH-nak" kind="show" identifier="parentsSegue" id="22U-He-VL1"/>
+                        <segue destination="GuD-tH-nak" kind="show" identifier="spiritualitySegue" id="22U-He-VL1"/>
                         <segue destination="RNT-tA-6Om" kind="show" identifier="optionsSegue" id="ykd-Yd-04O"/>
                         <segue destination="qaQ-uG-OR2" kind="show" identifier="aboutSegue" id="bM0-O2-4hW"/>
                     </connections>
@@ -189,12 +208,12 @@
             </objects>
             <point key="canvasLocation" x="782.60869565217399" y="-42.1875"/>
         </scene>
-        <!--Faith-->
+        <!--Worship-->
         <scene sceneID="ANN-e5-lfZ">
             <objects>
-                <viewController title="Faith" id="Wwv-Mp-aHf" sceneMemberID="viewController">
+                <viewController title="Worship" id="Wwv-Mp-aHf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4z-MK-vwx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="712"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsQ-mg-SzF">
@@ -211,7 +230,7 @@
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvi-6J-8mF">
-                                <rect key="frame" x="0.0" y="212" width="414" height="500"/>
+                                <rect key="frame" x="0.0" y="212" width="414" height="596"/>
                                 <connections>
                                     <segue destination="4i6-jx-I1R" kind="embed" identifier="" id="NRY-8A-xNw"/>
                                 </connections>
@@ -228,20 +247,19 @@
                             <constraint firstItem="lvi-6J-8mF" firstAttribute="trailing" secondItem="JqV-oZ-tMd" secondAttribute="trailing" id="g0G-6m-7f8"/>
                             <constraint firstItem="JqV-oZ-tMd" firstAttribute="trailing" secondItem="uph-sA-dcb" secondAttribute="trailing" id="mjT-94-gXu"/>
                             <constraint firstItem="VsQ-mg-SzF" firstAttribute="top" secondItem="JqV-oZ-tMd" secondAttribute="top" id="uvw-9Y-G5h"/>
-                            <constraint firstItem="lvi-6J-8mF" firstAttribute="bottom" secondItem="JqV-oZ-tMd" secondAttribute="bottom" id="w5e-bJ-efM"/>
+                            <constraint firstItem="lvi-6J-8mF" firstAttribute="bottom" secondItem="X4z-MK-vwx" secondAttribute="bottom" id="w5e-bJ-efM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JqV-oZ-tMd"/>
                     </view>
-                    <size key="freeformSize" width="414" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PeL-UQ-LSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-336.23188405797106" y="-873.21428571428567"/>
+            <point key="canvasLocation" x="1696" y="694"/>
         </scene>
-        <!--Faith Table View Controller-->
+        <!--Worship Table View Controller-->
         <scene sceneID="kfV-Ha-Fu2">
             <objects>
-                <tableViewController id="4i6-jx-I1R" customClass="FaithTableViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="4i6-jx-I1R" customClass="WorshipTableViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="SXu-dx-3DX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +289,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                         <sections>
                             <tableViewSection headerTitle="Mass Times" id="WHx-Dk-VV4">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="0Hi-N1-vOP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="0Hi-N1-vOP">
                                         <rect key="frame" x="0.0" y="249.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Hi-N1-vOP" id="KXW-dt-EJL">
@@ -318,7 +336,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="Rz4-iq-SFw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="Rz4-iq-SFw">
                                         <rect key="frame" x="0.0" y="293" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rz4-iq-SFw" id="RkH-hk-v8y">
@@ -365,7 +383,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="4od-Ph-zx6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="4od-Ph-zx6">
                                         <rect key="frame" x="0.0" y="336.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4od-Ph-zx6" id="wrs-FI-v4h">
@@ -412,7 +430,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="hsG-ZB-bAb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="hsG-ZB-bAb">
                                         <rect key="frame" x="0.0" y="380" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hsG-ZB-bAb" id="5a6-aW-ZjE">
@@ -459,7 +477,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="m1H-eh-Mua">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="m1H-eh-Mua">
                                         <rect key="frame" x="0.0" y="423.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1H-eh-Mua" id="DfX-fN-7KS">
@@ -508,6 +526,30 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="pwc-aC-rfM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="L1P-jO-brK" rowHeight="43.5" style="IBUITableViewCellStyleDefault" id="xWQ-9D-o3r">
+                                        <rect key="frame" x="0.0" y="503" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xWQ-9D-o3r" id="KO2-yg-g2Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Additional Mass Times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L1P-jO-brK">
+                                                    <rect key="frame" x="20" y="0.0" width="354.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qKX-Bu-4mh" kind="show" id="Yf1-yF-2vW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="4i6-jx-I1R" id="kRr-qJ-rsf"/>
@@ -525,7 +567,194 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQe-LY-2AJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405.79710144927537" y="-873.88392857142856"/>
+            <point key="canvasLocation" x="2375" y="694"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="H2Z-a1-cVh">
+            <objects>
+                <tableViewController id="qKX-Bu-4mh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a0w-06-eKA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Sts. John &amp; Andrew" id="ab6-Bd-UGe">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="G6T-Fv-xWM" style="IBUITableViewCellStyleDefault" id="GZp-9I-q7j">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GZp-9I-q7j" id="pwa-xr-tTK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="4:00 PM (Sat)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G6T-Fv-xWM">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="dFs-hM-uvv" style="IBUITableViewCellStyleDefault" id="1qi-0U-Qfr">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1qi-0U-Qfr" id="OCi-bu-3SK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="8:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dFs-hM-uvv">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="lLU-oe-vtR" style="IBUITableViewCellStyleDefault" id="O5e-BY-Vy5">
+                                        <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O5e-BY-Vy5" id="caS-WZ-RDI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="11:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lLU-oe-vtR">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="St. Vincent/Blessed Sacrement" id="xnV-sL-pEA">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="oP0-MG-jKY" style="IBUITableViewCellStyleDefault" id="qTt-rk-wco">
+                                        <rect key="frame" x="0.0" y="214.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qTt-rk-wco" id="PJW-Tc-Unc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="4:00 PM (Sat)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oP0-MG-jKY">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="AmF-kD-dub" style="IBUITableViewCellStyleDefault" id="208-zK-p8D">
+                                        <rect key="frame" x="0.0" y="258" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="208-zK-p8D" id="r5j-gR-TqX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="8:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AmF-kD-dub">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="k5c-vT-nH3" style="IBUITableViewCellStyleDefault" id="nry-1o-anf">
+                                        <rect key="frame" x="0.0" y="301.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nry-1o-anf" id="cnx-1n-wkK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="10:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k5c-vT-nH3">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Our Lady of Sorrows" id="NYL-KB-wkA">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="ttm-gn-qmW" style="IBUITableViewCellStyleDefault" id="B5x-xV-fNB">
+                                        <rect key="frame" x="0.0" y="401" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B5x-xV-fNB" id="Lqo-XG-J6I">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="5:15 PM (Sat)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ttm-gn-qmW">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="CpE-pn-ZWq" style="IBUITableViewCellStyleDefault" id="G7u-dr-Lpm">
+                                        <rect key="frame" x="0.0" y="444.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G7u-dr-Lpm" id="3vk-x8-roc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="8:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CpE-pn-ZWq">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="57p-WU-Msk" style="IBUITableViewCellStyleDefault" id="Q7b-aj-GCi">
+                                        <rect key="frame" x="0.0" y="488" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q7b-aj-GCi" id="yGT-xI-omJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="11:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="57p-WU-Msk">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="qKX-Bu-4mh" id="dD8-Ue-DB7"/>
+                            <outlet property="delegate" destination="qKX-Bu-4mh" id="mz7-6b-jAN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EtX-Ik-alr"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z67-Gy-Fd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3436" y="727"/>
         </scene>
         <!--Events-->
         <scene sceneID="vdQ-bP-hfI">
@@ -660,12 +889,12 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9z-2E-G5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253.6231884057972" y="-873.21428571428567"/>
+            <point key="canvasLocation" x="-965" y="1534"/>
         </scene>
-        <!--Parents-->
+        <!--Spirituality-->
         <scene sceneID="5PH-cj-pcz">
             <objects>
-                <viewController title="Parents" id="GuD-tH-nak" customClass="ParentsViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Spirituality" id="GuD-tH-nak" customClass="SpiritualityViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g3F-6r-BMc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -689,7 +918,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pW-4Q-Qdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2535" y="400"/>
+            <point key="canvasLocation" x="1986" y="1613"/>
         </scene>
         <!--Options-->
         <scene sceneID="6cF-le-G1z">
@@ -765,7 +994,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uir-ww-NfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1443" y="401"/>
+            <point key="canvasLocation" x="1986" y="2613"/>
         </scene>
         <!--About-->
         <scene sceneID="bPy-CC-TjP">
@@ -893,7 +1122,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WwX-pK-5Ev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1443.4782608695652" y="-415.17857142857139"/>
+            <point key="canvasLocation" x="-1303" y="695"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="GXe-ZH-Op5">
@@ -965,7 +1194,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eal-yD-uMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2346" y="-415"/>
+            <point key="canvasLocation" x="-613" y="694"/>
         </scene>
         <!--Modal Picker View Controller-->
         <scene sceneID="cJQ-Ga-fIc">
@@ -1009,7 +1238,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPR-7S-XQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375" y="5131"/>
+            <point key="canvasLocation" x="2678" y="2613"/>
         </scene>
     </scenes>
     <resources>
@@ -1020,7 +1249,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         <image name="facebookicon" width="950.5" height="949.5"/>
         <image name="faithheader" width="416.5" height="204"/>
         <image name="instaicon" width="950.5" height="949.5"/>
-        <image name="logotype" width="380" height="65"/>
+        <image name="logotype" width="380" height="28.5"/>
         <namedColor name="colorDarkGray">
             <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -1,5 +1,5 @@
 //
-//  ParentsViewController.swift
+//  SpiritualityViewController.swift
 //  BU Newman House
 //
 //  Created by Luke Redmore on 7/25/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ParentsViewController: UIViewController {
+class SpiritualityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

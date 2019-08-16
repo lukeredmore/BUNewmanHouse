@@ -1,5 +1,5 @@
 //
-//  FaithTableViewController.swift
+//  WorshipTableViewController.swift
 //  BU Newman House
 //
 //  Created by Luke Redmore on 7/25/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FaithTableViewController: UITableViewController, PendingNotificationDelegate {
+class WorshipTableViewController: UITableViewController, PendingNotificationDelegate {
     
     let massTimesModel = [
         1: MassDataModel(title: "St. Vincent's - 4:00 PM", id: "vincent1600sat", hour: 16, minute: 00, weekday: 7, tag: 1),

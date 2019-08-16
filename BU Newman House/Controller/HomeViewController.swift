@@ -11,7 +11,7 @@ import SafariServices
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    let buttonTitles = ["About", "Faith", "Events", "Register", "Parents", "Options"]
+    let buttonTitles = ["About", "Worship", "Events", "Spirituality", "Register", "Options"]
     
     var columnLayout = ColumnFlowLayout(
         cellsPerRow: 2,
@@ -101,7 +101,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     //MARK: Delegate Methods
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        if indexPath.row != 3 {
+        if indexPath.row != 4 {
             print("\(buttonTitles[indexPath.row]) was selected")
             performSegue(withIdentifier: "\(buttonTitles[indexPath.row].lowercased())Segue", sender: self)
         } else {

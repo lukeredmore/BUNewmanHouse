@@ -37,10 +37,11 @@
 		26AF580122E7731D00D369EE /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */; };
 		26B714F622EBAC7500514B53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B714F522EBAC7500514B53 /* Extensions.swift */; };
 		26B790D822F88C02008E824A /* MassDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B790D722F88C02008E824A /* MassDataModel.swift */; };
+		26C85E8823062B4600277A30 /* MassTimesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C85E8723062B4600277A30 /* MassTimesTableViewController.swift */; };
 		26D4C1BA22E9E43600E496B0 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */; };
 		26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B422E9E43500E496B0 /* EventsViewController.swift */; };
-		26D4C1BC22E9E43600E496B0 /* FaithTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */; };
-		26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */; };
+		26D4C1BC22E9E43600E496B0 /* WorshipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* WorshipTableViewController.swift */; };
+		26D4C1BE22E9E43600E496B0 /* SpiritualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* SpiritualityViewController.swift */; };
 		26D5B3972300391A00CF010F /* EventsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B3962300391A00CF010F /* EventsRetriever.swift */; };
 		26D5B3992300641300CF010F /* ModalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B3982300641300CF010F /* ModalMenuViewController.swift */; };
 		26D5B39B2300655F00CF010F /* ModalPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */; };
@@ -80,10 +81,11 @@
 		26AF57D422E7731D00D369EE /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
 		26B714F522EBAC7500514B53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		26B790D722F88C02008E824A /* MassDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassDataModel.swift; sourceTree = "<group>"; };
+		26C85E8723062B4600277A30 /* MassTimesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassTimesTableViewController.swift; sourceTree = "<group>"; };
 		26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B422E9E43500E496B0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
-		26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaithTableViewController.swift; sourceTree = "<group>"; };
-		26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
+		26D4C1B522E9E43600E496B0 /* WorshipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorshipTableViewController.swift; sourceTree = "<group>"; };
+		26D4C1B722E9E43600E496B0 /* SpiritualityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiritualityViewController.swift; sourceTree = "<group>"; };
 		26D5B3962300391A00CF010F /* EventsRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRetriever.swift; sourceTree = "<group>"; };
 		26D5B3982300641300CF010F /* ModalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMenuViewController.swift; sourceTree = "<group>"; };
 		26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPickerViewController.swift; sourceTree = "<group>"; };
@@ -202,10 +204,11 @@
 				2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */,
 				2624F1DA22EBD61C000832A7 /* MapViewController.swift */,
 				26AF578722E75DBF00D369EE /* HomeViewController.swift */,
-				26D4C1B522E9E43600E496B0 /* FaithTableViewController.swift */,
+				26D4C1B522E9E43600E496B0 /* WorshipTableViewController.swift */,
+				26C85E8723062B4600277A30 /* MassTimesTableViewController.swift */,
 				26B790D722F88C02008E824A /* MassDataModel.swift */,
 				26D5B395230037EF00CF010F /* Events */,
-				26D4C1B722E9E43600E496B0 /* ParentsViewController.swift */,
+				26D4C1B722E9E43600E496B0 /* SpiritualityViewController.swift */,
 				26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */,
 				26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */,
 				267037C822EE8B7200A57D0D /* NotificationController.swift */,
@@ -364,19 +367,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C85E8823062B4600277A30 /* MassTimesTableViewController.swift in Sources */,
 				26AD63FE22EAABA200BAAC39 /* PrivateAPIKeys.swift in Sources */,
 				26AD63FA22EA96FC00BAAC39 /* EventsTableViewCell.swift in Sources */,
 				26D5B3992300641300CF010F /* ModalMenuViewController.swift in Sources */,
 				26AF578822E75DBF00D369EE /* HomeViewController.swift in Sources */,
 				26D4C1BA22E9E43600E496B0 /* OptionsViewController.swift in Sources */,
-				26D4C1BC22E9E43600E496B0 /* FaithTableViewController.swift in Sources */,
+				26D4C1BC22E9E43600E496B0 /* WorshipTableViewController.swift in Sources */,
 				26D5B39B2300655F00CF010F /* ModalPickerViewController.swift in Sources */,
 				26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */,
 				267037C922EE8B7200A57D0D /* NotificationController.swift in Sources */,
 				26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */,
 				26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */,
 				26D5B3972300391A00CF010F /* EventsRetriever.swift in Sources */,
-				26D4C1BE22E9E43600E496B0 /* ParentsViewController.swift in Sources */,
+				26D4C1BE22E9E43600E496B0 /* SpiritualityViewController.swift in Sources */,
 				2624F1E022EBD61D000832A7 /* MapAnnotation.swift in Sources */,
 				26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */,
 				26B790D822F88C02008E824A /* MassDataModel.swift in Sources */,

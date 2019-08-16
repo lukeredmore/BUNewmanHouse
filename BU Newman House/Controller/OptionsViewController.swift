@@ -19,7 +19,7 @@ class OptionsViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         alertList = UserDefaults.standard.array(forKey: "eventAlertTimes") as? [Int] ?? [30]
-        //TODO: Add swipe to delete
+        tableView.backgroundColor = #colorLiteral(red: 0.9253895879, green: 0.9255481362, blue: 0.9253795743, alpha: 1)
         setupTable()
     }
     
