@@ -25,6 +25,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         collectionView.collectionViewLayout = columnLayout
         collectionView.contentInsetAdjustmentBehavior = .always
         collectionView.delegate = self

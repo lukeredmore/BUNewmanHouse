@@ -12,6 +12,8 @@
 		2624F1DF22EBD61D000832A7 /* AboutMailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1DB22EBD61D000832A7 /* AboutMailDelegate.swift */; };
 		2624F1E022EBD61D000832A7 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */; };
 		2624F1E322EBD63E000832A7 /* AboutMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624F1E122EBD63E000832A7 /* AboutMapCell.swift */; };
+		2641639023064014000E622C /* SaintOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641638F23064014000E622C /* SaintOfTheDay.swift */; };
+		2641639223067002000E622C /* SpiritualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641639123067002000E622C /* SpiritualityViewController.swift */; };
 		267037C922EE8B7200A57D0D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267037C822EE8B7200A57D0D /* NotificationController.swift */; };
 		26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A72FA022EA8D33004A1B62 /* EventsModel.swift */; };
 		26A749FF22EA2F5E00AEB763 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A749FE22EA2F5E00AEB763 /* Colors.xcassets */; };
@@ -41,7 +43,7 @@
 		26D4C1BA22E9E43600E496B0 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */; };
 		26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B422E9E43500E496B0 /* EventsViewController.swift */; };
 		26D4C1BC22E9E43600E496B0 /* WorshipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B522E9E43600E496B0 /* WorshipTableViewController.swift */; };
-		26D4C1BE22E9E43600E496B0 /* SpiritualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* SpiritualityViewController.swift */; };
+		26D4C1BE22E9E43600E496B0 /* SpiritualityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4C1B722E9E43600E496B0 /* SpiritualityTableViewController.swift */; };
 		26D5B3972300391A00CF010F /* EventsRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B3962300391A00CF010F /* EventsRetriever.swift */; };
 		26D5B3992300641300CF010F /* ModalMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B3982300641300CF010F /* ModalMenuViewController.swift */; };
 		26D5B39B2300655F00CF010F /* ModalPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */; };
@@ -54,6 +56,8 @@
 		2624F1DB22EBD61D000832A7 /* AboutMailDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMailDelegate.swift; sourceTree = "<group>"; };
 		2624F1DC22EBD61D000832A7 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		2624F1E122EBD63E000832A7 /* AboutMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMapCell.swift; sourceTree = "<group>"; };
+		2641638F23064014000E622C /* SaintOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaintOfTheDay.swift; sourceTree = "<group>"; };
+		2641639123067002000E622C /* SpiritualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritualityViewController.swift; sourceTree = "<group>"; };
 		267037C822EE8B7200A57D0D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		26A72FA022EA8D33004A1B62 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
 		26A749FE22EA2F5E00AEB763 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -85,7 +89,7 @@
 		26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B422E9E43500E496B0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		26D4C1B522E9E43600E496B0 /* WorshipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorshipTableViewController.swift; sourceTree = "<group>"; };
-		26D4C1B722E9E43600E496B0 /* SpiritualityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiritualityViewController.swift; sourceTree = "<group>"; };
+		26D4C1B722E9E43600E496B0 /* SpiritualityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiritualityTableViewController.swift; sourceTree = "<group>"; };
 		26D5B3962300391A00CF010F /* EventsRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRetriever.swift; sourceTree = "<group>"; };
 		26D5B3982300641300CF010F /* ModalMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMenuViewController.swift; sourceTree = "<group>"; };
 		26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPickerViewController.swift; sourceTree = "<group>"; };
@@ -208,10 +212,12 @@
 				26C85E8723062B4600277A30 /* MassTimesTableViewController.swift */,
 				26B790D722F88C02008E824A /* MassDataModel.swift */,
 				26D5B395230037EF00CF010F /* Events */,
-				26D4C1B722E9E43600E496B0 /* SpiritualityViewController.swift */,
+				26D4C1B722E9E43600E496B0 /* SpiritualityTableViewController.swift */,
+				2641639123067002000E622C /* SpiritualityViewController.swift */,
 				26D4C1B322E9E43500E496B0 /* OptionsViewController.swift */,
 				26D5B39A2300655F00CF010F /* ModalPickerViewController.swift */,
 				267037C822EE8B7200A57D0D /* NotificationController.swift */,
+				2641638F23064014000E622C /* SaintOfTheDay.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 				26AF577D22E75DBF00D369EE /* Frameworks */,
 				26AF577E22E75DBF00D369EE /* Resources */,
 				9ABB20A3CE9F93A55664E965 /* [CP] Embed Pods Frameworks */,
+				26416393230672CD000E622C /* Increment Build Number */,
 			);
 			buildRules = (
 			);
@@ -316,6 +323,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26416393230672CD000E622C /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
 		39296FE0897AEED0BFE4E33D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,12 +372,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BU Newman House/Pods-BU Newman House-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,13 +403,15 @@
 				26D4C1BC22E9E43600E496B0 /* WorshipTableViewController.swift in Sources */,
 				26D5B39B2300655F00CF010F /* ModalPickerViewController.swift in Sources */,
 				26AF57C722E771BC00D369EE /* ColumnFlowLayout.swift in Sources */,
+				2641639023064014000E622C /* SaintOfTheDay.swift in Sources */,
 				267037C922EE8B7200A57D0D /* NotificationController.swift in Sources */,
 				26AF578422E75DBF00D369EE /* AppDelegate.swift in Sources */,
 				26AF579C22E769E300D369EE /* CollectionViewCell.swift in Sources */,
 				26D5B3972300391A00CF010F /* EventsRetriever.swift in Sources */,
-				26D4C1BE22E9E43600E496B0 /* SpiritualityViewController.swift in Sources */,
+				26D4C1BE22E9E43600E496B0 /* SpiritualityTableViewController.swift in Sources */,
 				2624F1E022EBD61D000832A7 /* MapAnnotation.swift in Sources */,
 				26A72FA122EA8D33004A1B62 /* EventsModel.swift in Sources */,
+				2641639223067002000E622C /* SpiritualityViewController.swift in Sources */,
 				26B790D822F88C02008E824A /* MassDataModel.swift in Sources */,
 				26D4C1BB22E9E43600E496B0 /* EventsViewController.swift in Sources */,
 				2624F1E322EBD63E000832A7 /* AboutMapCell.swift in Sources */,

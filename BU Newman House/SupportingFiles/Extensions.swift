@@ -32,10 +32,10 @@ extension Date {
         return fmt.string(from: self)
     }
     func monthYearString() -> String {
-            let fmt = DateFormatter()
-            fmt.dateFormat = "MMMM yyyy"
-            return fmt.string(from: self)
-        }
+        let fmt = DateFormatter()
+        fmt.dateFormat = "MMMM yyyy"
+        return fmt.string(from: self)
+    }
     func dayString() -> String {
         let fmt = DateFormatter()
         fmt.dateFormat = "dd"
@@ -70,6 +70,23 @@ extension UIView {
         layer.shadowOpacity = 0.5
         layer.shadowRadius = 5
         //clipsToBounds = false
+    }
+}
+
+extension UIImageView {
+    func downloadAndDisplayImage(fromURL url: URL, withContentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() {
+                self.image = image
+            }
+        }.resume()
     }
 }
 

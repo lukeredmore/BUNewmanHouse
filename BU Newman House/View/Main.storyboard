@@ -60,24 +60,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotype" translatesAutoresizingMaskIntoConstraints="NO" id="Rfl-KV-Lbb">
-                                        <rect key="frame" x="15" y="10" width="384" height="57"/>
+                                        <rect key="frame" x="15" y="10" width="384" height="130"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYo-BT-NAU">
-                                        <rect key="frame" x="57.5" y="72" width="299" height="56"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binghamton University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYo-BT-NAU">
+                                        <rect key="frame" x="89" y="145" width="236.5" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="299" id="Av5-3O-Skb"/>
-                                            <constraint firstAttribute="height" constant="56" id="KKw-IC-77o"/>
+                                            <constraint firstAttribute="width" constant="236.5" id="QcQ-Ou-HML"/>
+                                            <constraint firstAttribute="height" constant="30" id="jWA-Wn-4yK"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Catholic Church Community At Binghamton University">
-                                                <attributes>
-                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="21" name="Gotham-Book"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="Gotham-BookItalic" family="Gotham" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -199,14 +192,65 @@
                         <outlet property="collectionView" destination="msb-Z9-Q3w" id="t4Z-Pm-nnv"/>
                         <segue destination="Wwv-Mp-aHf" kind="show" identifier="worshipSegue" id="GCR-x2-36d"/>
                         <segue destination="z89-FU-QgP" kind="show" identifier="eventsSegue" id="DjO-Kr-izA"/>
-                        <segue destination="GuD-tH-nak" kind="show" identifier="spiritualitySegue" id="22U-He-VL1"/>
                         <segue destination="RNT-tA-6Om" kind="show" identifier="optionsSegue" id="ykd-Yd-04O"/>
                         <segue destination="qaQ-uG-OR2" kind="show" identifier="aboutSegue" id="bM0-O2-4hW"/>
+                        <segue destination="i17-Z9-v1t" kind="show" identifier="spiritualitySegue" id="zLt-vv-LFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqp-11-euR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="782.60869565217399" y="-42.1875"/>
+        </scene>
+        <!--Spirituality-->
+        <scene sceneID="HVn-SP-VLe">
+            <objects>
+                <viewController title="Spirituality" id="i17-Z9-v1t" customClass="SpiritualityViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sgs-rr-VQG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEE-lR-dzy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
+                                <color key="backgroundColor" name="colorPrimaryDark"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="Xpt-8s-G0m"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-ip-TMP">
+                                <rect key="frame" x="0.0" y="8" width="414" height="800"/>
+                                <connections>
+                                    <segue destination="3tA-4K-Rfq" kind="embed" identifier="embedSegue" id="rVs-2l-BbB"/>
+                                </connections>
+                            </containerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Qjl-Lx-V5r">
+                                <rect key="frame" x="188.5" y="355.5" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="6SO-sv-4gC"/>
+                                    <constraint firstAttribute="height" constant="37" id="nYl-fg-L3J"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" name="superLightGray"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LVF-ip-TMP" secondAttribute="bottom" id="8jr-yR-afC"/>
+                            <constraint firstItem="Qjl-Lx-V5r" firstAttribute="centerY" secondItem="sgs-rr-VQG" secondAttribute="centerY" constant="-30" id="Qcp-vb-4MT"/>
+                            <constraint firstItem="LVF-ip-TMP" firstAttribute="leading" secondItem="6ke-tN-YiV" secondAttribute="leading" id="Sc2-ke-lut"/>
+                            <constraint firstItem="6ke-tN-YiV" firstAttribute="trailing" secondItem="pEE-lR-dzy" secondAttribute="trailing" id="bmZ-fw-HB9"/>
+                            <constraint firstItem="6ke-tN-YiV" firstAttribute="trailing" secondItem="LVF-ip-TMP" secondAttribute="trailing" id="cRP-5l-KAe"/>
+                            <constraint firstItem="pEE-lR-dzy" firstAttribute="top" secondItem="6ke-tN-YiV" secondAttribute="top" id="gjS-SR-cnm"/>
+                            <constraint firstItem="Qjl-Lx-V5r" firstAttribute="centerX" secondItem="sgs-rr-VQG" secondAttribute="centerX" id="jpX-fr-KN0"/>
+                            <constraint firstItem="pEE-lR-dzy" firstAttribute="leading" secondItem="6ke-tN-YiV" secondAttribute="leading" id="sBM-qz-t0a"/>
+                            <constraint firstItem="LVF-ip-TMP" firstAttribute="top" secondItem="pEE-lR-dzy" secondAttribute="bottom" id="wIX-N6-VLI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6ke-tN-YiV"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadingSymbol" destination="Qjl-Lx-V5r" id="YgZ-qq-evJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9J-yH-fMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1271" y="1533"/>
         </scene>
         <!--Worship-->
         <scene sceneID="ANN-e5-lfZ">
@@ -567,7 +611,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQe-LY-2AJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375" y="694"/>
+            <point key="canvasLocation" x="2504" y="694"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="H2Z-a1-cVh">
@@ -754,7 +798,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z67-Gy-Fd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3436" y="727"/>
+            <point key="canvasLocation" x="3348" y="695"/>
         </scene>
         <!--Events-->
         <scene sceneID="vdQ-bP-hfI">
@@ -820,7 +864,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                                 <constraint firstAttribute="height" constant="21" id="02c-Bq-83O"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Gotham-BookItalic" family="Gotham" pointSize="17"/>
-                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -892,33 +936,78 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
             <point key="canvasLocation" x="-965" y="1534"/>
         </scene>
         <!--Spirituality-->
-        <scene sceneID="5PH-cj-pcz">
+        <scene sceneID="Y3w-fD-gBQ">
             <objects>
-                <viewController title="Spirituality" id="GuD-tH-nak" customClass="SpiritualityViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g3F-6r-BMc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                <tableViewController title="Spirituality" id="3tA-4K-Rfq" customClass="SpiritualityTableViewController" customModule="BU_Newman_House" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XKa-ar-vBd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-1x-qTj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="8"/>
-                                <color key="backgroundColor" name="colorPrimaryDark"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="8" id="YNZ-xZ-mWq"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" name="systemBackground"/>
-                        <constraints>
-                            <constraint firstItem="KaK-1x-qTj" firstAttribute="leading" secondItem="g3F-6r-BMc" secondAttribute="leading" id="FpR-b2-lEQ"/>
-                            <constraint firstItem="lOJ-F0-Md2" firstAttribute="trailing" secondItem="KaK-1x-qTj" secondAttribute="trailing" id="hAv-JJ-qye"/>
-                            <constraint firstItem="KaK-1x-qTj" firstAttribute="top" secondItem="lOJ-F0-Md2" secondAttribute="top" id="izY-hO-0fd"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="lOJ-F0-Md2"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3pW-4Q-Qdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="0U1-bh-KpA">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2JG-PP-u4h">
+                                    <rect key="frame" x="0.0" y="46.5" width="414" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="u58-qa-dhB"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saint of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmG-Nr-ZJk">
+                                    <rect key="frame" x="0.0" y="8" width="414" height="30.5"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="27"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXA-l3-hKL">
+                                    <rect key="frame" x="8" y="292.5" width="398" height="291.5"/>
+                                    <mutableString key="text">Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in dolor ac nisl laoreet rhoncus. Nulla facilisi. Proin efficitur enim eget nisl vehicula, ac molestie nibh volutpat. Quisque egestas, metus et convallis condimentum, nisl felis tristique magna, sed ultrices nisl ligula nec tortor. Pellentesque rutrum velit ac lacus ullamcorper, nec auctor tortor pulvinar. Donec sed nibh leo. In dui ligula, dignissim nec quam ut, semper pellentesque lectus. In pharetra tellus interdum nibh malesuada cursus. Sed ullamcorper lorem gravida accumsan luctus. Vivamus dignissim accumsan turpis vel pellentesque. Sed mollis nunc justo, ac fermentum neque faucibus eu. Sed auctor blandit rhoncus. </mutableString>
+                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Lorem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYL-dG-0N3">
+                                    <rect key="frame" x="0.0" y="262.5" width="414" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gotham-BookItalic" family="Gotham" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="TmG-Nr-ZJk" secondAttribute="trailing" id="7Bm-pM-nf2"/>
+                                <constraint firstAttribute="trailing" secondItem="RYL-dG-0N3" secondAttribute="trailing" id="Pwf-Pf-IU1"/>
+                                <constraint firstItem="xXA-l3-hKL" firstAttribute="top" secondItem="RYL-dG-0N3" secondAttribute="bottom" constant="5" id="V5U-rs-Ee1"/>
+                                <constraint firstAttribute="trailing" secondItem="xXA-l3-hKL" secondAttribute="trailing" constant="8" id="cBc-pu-ghR"/>
+                                <constraint firstItem="TmG-Nr-ZJk" firstAttribute="top" secondItem="0U1-bh-KpA" secondAttribute="top" constant="8" id="cVE-SW-vLY"/>
+                                <constraint firstItem="2JG-PP-u4h" firstAttribute="top" secondItem="TmG-Nr-ZJk" secondAttribute="bottom" constant="8" id="dEB-vW-qHp"/>
+                                <constraint firstAttribute="trailing" secondItem="2JG-PP-u4h" secondAttribute="trailing" id="hZ5-TO-Elo"/>
+                                <constraint firstItem="xXA-l3-hKL" firstAttribute="leading" secondItem="0U1-bh-KpA" secondAttribute="leading" constant="8" id="i5Q-Xl-hwS"/>
+                                <constraint firstItem="2JG-PP-u4h" firstAttribute="leading" secondItem="0U1-bh-KpA" secondAttribute="leading" id="ixP-Dd-mlV"/>
+                                <constraint firstItem="RYL-dG-0N3" firstAttribute="leading" secondItem="0U1-bh-KpA" secondAttribute="leading" id="koa-zd-9xq"/>
+                                <constraint firstItem="TmG-Nr-ZJk" firstAttribute="leading" secondItem="0U1-bh-KpA" secondAttribute="leading" id="rkh-VV-GPX"/>
+                                <constraint firstItem="RYL-dG-0N3" firstAttribute="top" secondItem="2JG-PP-u4h" secondAttribute="bottom" constant="16" id="s6i-1E-1XF"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection id="cj8-jk-5Yc">
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="3tA-4K-Rfq" id="wBT-4I-GNC"/>
+                            <outlet property="delegate" destination="3tA-4K-Rfq" id="8Ym-a7-hBp"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="xXA-l3-hKL" id="ki4-ZI-ZSv"/>
+                        <outlet property="imageView" destination="2JG-PP-u4h" id="eS4-Nl-1w8"/>
+                        <outlet property="nameLabel" destination="RYL-dG-0N3" id="KI4-Rn-5kK"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSN-3b-Lh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1986" y="1613"/>
+            <point key="canvasLocation" x="2020" y="1533"/>
         </scene>
         <!--Options-->
         <scene sceneID="6cF-le-G1z">
@@ -1014,7 +1103,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2019 Newman House of Binghamton University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bq7-bo-fbb">
                                             <rect key="frame" x="37" y="0.0" width="340" height="23"/>
                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1045,7 +1134,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70 Seminary Avenue Binghamton, NY 13905" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKx-Xz-xtP">
                                                             <rect key="frame" x="0.0" y="26.5" width="244.5" height="40"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
-                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -1249,7 +1338,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         <image name="facebookicon" width="950.5" height="949.5"/>
         <image name="faithheader" width="416.5" height="204"/>
         <image name="instaicon" width="950.5" height="949.5"/>
-        <image name="logotype" width="380" height="28.5"/>
+        <image name="logotype" width="380" height="65"/>
         <namedColor name="colorDarkGray">
             <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -1258,6 +1347,9 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
         </namedColor>
         <namedColor name="colorPrimaryDark">
             <color red="0.0" green="0.25490196078431371" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="superLightGray">
+            <color red="0.92538958787918091" green="0.92554813623428345" blue="0.92537957429885864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="systemBackground">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -7,5 +7,6 @@ target 'BU Newman House' do
 
   # Pods for BU Newman House
 pod 'SwiftyJSON'
+pod 'SwiftSoup'
 
 end
