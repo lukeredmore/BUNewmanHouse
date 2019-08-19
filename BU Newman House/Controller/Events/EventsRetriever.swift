@@ -9,7 +9,11 @@
 import Foundation
 import SwiftyJSON
 
-class EventsRetriever {
+class EventsRetriever: NSObject, PendingNotificationDelegate {
+    func configureAlerts(forIDList idList: [String]) {
+        getEventsDataFromOnline(forIDList : idList)
+    }
+    
     
     var dateTimeFormatter : DateFormatter {
         let fmt = DateFormatter()
@@ -17,12 +21,19 @@ class EventsRetriever {
         return fmt
     }
     
+    let notificationController = NotificationController()
     let preferences = UserDefaults.standard
+    let completion : ([[EventsModel]]?) -> Void
     
-    func retrieveEventsArray(forceReturn : Bool = false, forceRefresh: Bool = false, completion : @escaping ([[EventsModel]]?) -> Void) {
+    init(completion : @escaping ([[EventsModel]]?) -> Void) {
+        self.completion = completion
+        
+    }
+    
+    func retrieveEventsArray(forceReturn : Bool = false, forceRefresh: Bool = false) {
         if forceRefresh {
             print("Events Data is being force refreshed")
-            getEventsDataFromOnline(completion: completion)
+            notificationController.getPendingEventsNotifications(delegate: self)
         } else if forceReturn {
             print("Events Data is being force returned")
             if let json = preferences.value(forKey:"eventsArray") as? Data {
@@ -43,15 +54,15 @@ class EventsRetriever {
                     return completion(try! PropertyListDecoder().decode([[EventsModel]].self, from: json))
                 } else {
                     print("Events data found, but is old. Will refresh online.")
-                    getEventsDataFromOnline(completion: completion)
+                    notificationController.getPendingEventsNotifications(delegate: self)
                 }
             } else {
                 print("No Events data found in UserDefaults. Looking online.")
-                getEventsDataFromOnline(completion: completion)
+                notificationController.getPendingEventsNotifications(delegate: self)
             }
         }
     }
-    private func getEventsDataFromOnline(completion : @escaping ([[EventsModel]]?) -> Void) {
+    private func getEventsDataFromOnline(forIDList idList : [String]) {
         print("We are asking for Events data")
         let fmt = DateFormatter()
         fmt.dateFormat = "yyyy-MM-dd"
@@ -64,23 +75,24 @@ class EventsRetriever {
             request.httpMethod = "GET"
             let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
                 if response as? HTTPURLResponse != nil && data != nil {
-                    self.parseEventsData(forJSON: JSON(data!))
-                    self.retrieveEventsArray(forceReturn: false, forceRefresh: false, completion: completion)
+                    self.parseEventsData(forJSON: JSON(data!), withIDList: idList)
+                    self.retrieveEventsArray()
                 } else if error != nil {
                     print("Error on request to Breeze: ")
                     print(error!)
-                    self.retrieveEventsArray(forceReturn: true, forceRefresh: false, completion: completion)
+                    self.retrieveEventsArray(forceReturn: true, forceRefresh: false)
                 }
             }
             task.resume()
         }
     }
     
-    private func parseEventsData(forJSON json : JSON) {
+    private func parseEventsData(forJSON json : JSON, withIDList idList : [String]) {
         var eventsArray = [[EventsModel]]()
         var monthToBeat = dateTimeFormatter.date(from: "\(json[0]["start_datetime"])")?.monthYearString()
         var i = 0
         var loopEnabled = true
+        var mutableIDList = idList
         while i < json.count {
             var eventsArrayToAppend : [EventsModel] = []
             while ((dateTimeFormatter.date(from: "\(json[i]["start_datetime"])")?.monthYearString())! == monthToBeat) && loopEnabled {
@@ -88,7 +100,17 @@ class EventsRetriever {
                 let startTime = dateTimeFormatter.date(from: "\(json[i]["start_datetime"])")
                 let endTime = dateTimeFormatter.date(from: "\(json[i]["end_datetime"])")
                 let id = "\(json[i]["id"])"
-                eventsArrayToAppend.append(EventsModel(title: title, startTime: startTime, endTime: endTime, id: id))
+                
+                
+                var shouldNotifyThisEvent = false
+                if let idIndex = mutableIDList.firstIndex(of: id) {
+                    shouldNotifyThisEvent = true
+                    mutableIDList.remove(at: idIndex)
+                }
+               
+               if !title.contains("Mass") {
+                    eventsArrayToAppend.append(EventsModel(title: title, startTime: startTime, endTime: endTime, id: id, buttonSelected: shouldNotifyThisEvent))
+                }
                 if i < json.count - 1 {
                     i += 1
                 } else {
@@ -104,16 +126,22 @@ class EventsRetriever {
             
             
         }
+        for unusedID in mutableIDList {
+            notificationController.removeNotification(withID: unusedID)
+        }
         if eventsArray.count > 0 {
             addObjectArrayToUserDefaults(eventsArray)
         }
 
     }
     
-    private func addObjectArrayToUserDefaults(_ eventsArray: [[EventsModel]]) {
+    func addObjectArrayToUserDefaults(_ eventsArray: [[EventsModel]], updateTime : Bool = true) {
         print("Events array is being added to UserDefaults")
-        let dateTimeToAdd = Date().dateStringWithTime()
+        if updateTime {
+            let dateTimeToAdd = Date().dateStringWithTime()
+            UserDefaults.standard.set(dateTimeToAdd, forKey: "eventsArrayTime")
+        }
         UserDefaults.standard.set(try? PropertyListEncoder().encode(eventsArray), forKey: "eventsArray")
-        UserDefaults.standard.set(dateTimeToAdd, forKey: "eventsArrayTime")
+        
     }
 }

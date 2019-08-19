@@ -7,6 +7,9 @@
 //
 
 import UIKit
+protocol TableViewCellSelectionDelegate {
+    func toggleNotificationButtonForEvent(withID id: String)
+}
 
 
 class EventsTableViewCell: UITableViewCell {
@@ -18,8 +21,10 @@ class EventsTableViewCell: UITableViewCell {
     @IBOutlet weak var notificationButton: UIButton!
     
     var model : EventsModel!
+    var selectionDelegate : TableViewCellSelectionDelegate? = nil
     
-    func addDataForEventsModel(_ model : EventsModel) {
+    func addDataForEventsModel(_ model : EventsModel, selectionDelegate : TableViewCellSelectionDelegate) {
+        self.selectionDelegate = selectionDelegate
         self.model = model
         titleLabel.text = model.title
         if let start = model.startTime {
@@ -47,9 +52,11 @@ class EventsTableViewCell: UITableViewCell {
             timeLabel.text = ""
         }
         notificationButton.isEnabled = timeLabel.text != ""
+        notificationButton.isSelected = model.buttonSelected
     }
     
     @IBAction func notificationButtonToggled(_ sender: Any) {
+        selectionDelegate?.toggleNotificationButtonForEvent(withID: model.id)
         notificationButton.isSelected.toggle()
         let controller = NotificationController()
         if notificationButton.isSelected {

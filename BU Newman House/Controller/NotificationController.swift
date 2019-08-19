@@ -24,9 +24,14 @@ class NotificationController {
                 print("\(request.content.title) with ID: ", request.identifier)
                 idList.append(request.identifier)
             }
-            print("end of requests")
+            print("end of requests, sending base values of id's (without -1440 etc. to handler")
             print(" ")
-            delegate.configureAlerts(forIDList: idList)
+            
+            let idSet : Set<String> = Set(idList.map {
+                return $0.components(separatedBy: "-")[0]
+            })
+            
+            delegate.configureAlerts(forIDList: idSet.sorted())
         })
         
     }

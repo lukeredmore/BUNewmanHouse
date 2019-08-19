@@ -13,4 +13,10 @@ struct EventsModel : Codable {
     let startTime : Date?
     let endTime : Date?
     let id : String
+    var buttonSelected : Bool
+    
+    
+    mutating func buttonToggled() {
+        self.buttonSelected.toggle()
+    }
 }

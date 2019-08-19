@@ -9,7 +9,9 @@
 import UIKit
 
 ///Downloads, parses, and displays all the events from Breeze. Alert system controlled by cell itself and NotificationController, not here
-class EventsViewController: UIViewController, PendingNotificationDelegate, UITableViewDataSource, UITableViewDelegate {
+class EventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TableViewCellSelectionDelegate {
+    
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loadingSymbol: UIActivityIndicatorView!
     
@@ -24,7 +26,7 @@ class EventsViewController: UIViewController, PendingNotificationDelegate, UITab
     
     
     var eventsArray : [[EventsModel]]!
-    var queuedNotificationIDList : [String] = []
+    lazy var eventsRetriever = EventsRetriever(completion: setupTable)
     
     
     //MARK: View Control
@@ -39,36 +41,13 @@ class EventsViewController: UIViewController, PendingNotificationDelegate, UITab
             loadingSymbol.color = .gray
         }
         loadingSymbol.startAnimating()
-        EventsRetriever().retrieveEventsArray(forceReturn: false, forceRefresh: false, completion: setupTable)
+        eventsRetriever.retrieveEventsArray()
     }
     
     
     //MARK: Data Methods
     @objc func refreshData() {
-        EventsRetriever().retrieveEventsArray(forceReturn: false, forceRefresh: true, completion: setupTable)
-    }
-    
-    
-    //MARK: Alert Methods
-    func configureAlerts(forIDList : [String]) {
-        self.queuedNotificationIDList = forIDList
-        for id in forIDList {
-            var markForDeletion = true
-            for month in eventsArray {
-                for event in month {
-                    if id.contains(event.id) || id.contains("newman") || id.contains("vincent") {
-                        markForDeletion = false
-                    }
-                }
-            }
-            if markForDeletion {
-                NotificationController().removeNotification(withID: id)
-            }
-        }
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-        
+        eventsRetriever.retrieveEventsArray(forceReturn: false, forceRefresh: true)
     }
     
     
@@ -76,7 +55,7 @@ class EventsViewController: UIViewController, PendingNotificationDelegate, UITab
     func setupTable(forModelArray modelArray : [[EventsModel]]?) {
         if modelArray != nil, modelArray!.count > 0 {
             self.eventsArray = modelArray
-            NotificationController().getPendingEventsNotifications(delegate: self)
+            
             DispatchQueue.main.async {
                 self.tableView.dataSource = self
                 self.tableView.delegate = self
@@ -99,18 +78,25 @@ class EventsViewController: UIViewController, PendingNotificationDelegate, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "eventsTableViewCell") as? EventsTableViewCell else { return UITableViewCell() }
         let model = eventsArray[indexPath.section][indexPath.row]
-        cell.addDataForEventsModel(model)
-        for each in queuedNotificationIDList {
-            if each.contains(model.id) {
-                cell.notificationButton.isSelected = true
-                return cell
-            }
-        }
+        cell.addDataForEventsModel(model, selectionDelegate: self)
+        
         return cell
     }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView else { return }
         header.textLabel?.font = UIFont(name: "Gotham-Bold", size: 18)
+    }
+    func toggleNotificationButtonForEvent(withID id: String) {
+        for month in eventsArray.indices {
+            for day in eventsArray[month].indices {
+                if eventsArray[month][day].id == id {
+                    eventsArray[month][day].buttonToggled()
+                    tableView.reloadData()
+                    eventsRetriever.addObjectArrayToUserDefaults(eventsArray, updateTime: false)
+                    break
+                }
+            }
+        }
     }
     
 }
