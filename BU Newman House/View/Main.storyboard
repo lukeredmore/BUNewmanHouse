@@ -60,11 +60,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotype" translatesAutoresizingMaskIntoConstraints="NO" id="Rfl-KV-Lbb">
-                                        <rect key="frame" x="15" y="10" width="384" height="130"/>
+                                        <rect key="frame" x="15" y="10" width="384" height="65"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binghamton University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYo-BT-NAU">
-                                        <rect key="frame" x="89" y="145" width="236.5" height="30"/>
+                                        <rect key="frame" x="89" y="80" width="236.5" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="236.5" id="QcQ-Ou-HML"/>
                                             <constraint firstAttribute="height" constant="30" id="jWA-Wn-4yK"/>
@@ -268,7 +268,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faithheader" translatesAutoresizingMaskIntoConstraints="NO" id="uph-sA-dcb">
-                                <rect key="frame" x="0.0" y="8" width="414" height="204"/>
+                                <rect key="frame" x="0.0" y="8" width="414.00000000000011" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uph-sA-dcb" secondAttribute="height" multiplier="69:34" id="UGj-nA-b2J"/>
                                 </constraints>
@@ -333,32 +333,32 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                         <sections>
                             <tableViewSection headerTitle="Mass Times" id="WHx-Dk-VV4">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="0Hi-N1-vOP">
-                                        <rect key="frame" x="0.0" y="249.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="46" id="0Hi-N1-vOP">
+                                        <rect key="frame" x="0.0" y="249.5" width="414" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Hi-N1-vOP" id="KXW-dt-EJL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-RK-om2">
-                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-RK-om2">
+                                                    <rect key="frame" x="20" y="2" width="342.5" height="42"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday - 4:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-Kq-Gyc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOk-xY-yZX">
-                                                            <rect key="frame" x="246.5" y="0.0" width="104" height="43.5"/>
-                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's/Blessed Sacrament" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOk-xY-yZX">
+                                                            <rect key="frame" x="0.0" y="18.5" width="225" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlv-V4-laC">
-                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                    <rect key="frame" x="362.5" y="1.5" width="43.5" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="43.5" id="MTA-Ak-E0T"/>
                                                         <constraint firstAttribute="height" constant="43.5" id="XwX-JS-BmV"/>
@@ -372,199 +372,199 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Rlv-V4-laC" firstAttribute="leading" secondItem="Xao-RK-om2" secondAttribute="trailing" id="1nc-vC-Sb4"/>
-                                                <constraint firstAttribute="trailing" secondItem="Rlv-V4-laC" secondAttribute="trailing" id="4Di-H9-IkG"/>
-                                                <constraint firstAttribute="bottom" secondItem="Xao-RK-om2" secondAttribute="bottom" id="6ym-99-lGI"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rlv-V4-laC" secondAttribute="trailing" constant="8" id="4Di-H9-IkG"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xao-RK-om2" secondAttribute="bottom" constant="2" id="6ym-99-lGI"/>
                                                 <constraint firstItem="Xao-RK-om2" firstAttribute="leading" secondItem="KXW-dt-EJL" secondAttribute="leadingMargin" id="GUr-Iv-hBl"/>
                                                 <constraint firstItem="Rlv-V4-laC" firstAttribute="centerY" secondItem="KXW-dt-EJL" secondAttribute="centerY" id="LRf-2r-2Gc"/>
-                                                <constraint firstItem="Xao-RK-om2" firstAttribute="top" secondItem="KXW-dt-EJL" secondAttribute="top" id="TqI-DW-Xdc"/>
+                                                <constraint firstItem="Xao-RK-om2" firstAttribute="top" secondItem="KXW-dt-EJL" secondAttribute="top" constant="2" id="TqI-DW-Xdc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="Rz4-iq-SFw">
-                                        <rect key="frame" x="0.0" y="293" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="46" id="Grl-Gh-Bbz">
+                                        <rect key="frame" x="0.0" y="295.5" width="414" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rz4-iq-SFw" id="RkH-hk-v8y">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Grl-Gh-Bbz" id="lXK-mQ-bG0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="MhG-ZS-34I">
-                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="dzr-2S-E79">
+                                                    <rect key="frame" x="20" y="2" width="342.5" height="42"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 8:00 AM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5M0-zy-jTa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="152.5" height="43.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 8:00 AM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uen-IO-YGU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="152.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awK-MQ-cfz">
-                                                            <rect key="frame" x="246.5" y="0.0" width="104" height="43.5"/>
-                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's/Blessed Sacrament" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FI-7a-cWv">
+                                                            <rect key="frame" x="0.0" y="18.5" width="225" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFd-y8-w2O">
-                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-Tn-shB">
+                                                    <rect key="frame" x="362.5" y="1.5" width="43.5" height="43.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="43.5" id="2nq-gV-Pgk"/>
-                                                        <constraint firstAttribute="width" constant="43.5" id="9l4-cq-eT7"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="aUQ-5J-nkc"/>
+                                                        <constraint firstAttribute="width" constant="43.5" id="dnV-Sl-C2M"/>
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
                                                     <connections>
-                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="gk0-Dg-96W"/>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="rXw-2W-pVa"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kFd-y8-w2O" firstAttribute="leading" secondItem="MhG-ZS-34I" secondAttribute="trailing" id="8Gy-3Q-MK6"/>
-                                                <constraint firstItem="MhG-ZS-34I" firstAttribute="leading" secondItem="RkH-hk-v8y" secondAttribute="leadingMargin" id="EWK-6A-gSJ"/>
-                                                <constraint firstItem="MhG-ZS-34I" firstAttribute="top" secondItem="RkH-hk-v8y" secondAttribute="top" id="FAG-C3-M6e"/>
-                                                <constraint firstAttribute="trailing" secondItem="kFd-y8-w2O" secondAttribute="trailing" id="K5B-gx-wZc"/>
-                                                <constraint firstAttribute="bottom" secondItem="MhG-ZS-34I" secondAttribute="bottom" id="kKl-LR-fd1"/>
-                                                <constraint firstItem="kFd-y8-w2O" firstAttribute="centerY" secondItem="RkH-hk-v8y" secondAttribute="centerY" id="veK-J0-9TT"/>
+                                                <constraint firstItem="oSA-Tn-shB" firstAttribute="centerY" secondItem="lXK-mQ-bG0" secondAttribute="centerY" id="9EB-X5-cGh"/>
+                                                <constraint firstAttribute="trailing" secondItem="oSA-Tn-shB" secondAttribute="trailing" constant="8" id="GcQ-yB-pHt"/>
+                                                <constraint firstItem="dzr-2S-E79" firstAttribute="top" secondItem="lXK-mQ-bG0" secondAttribute="top" constant="2" id="jbo-x9-Ii0"/>
+                                                <constraint firstItem="oSA-Tn-shB" firstAttribute="leading" secondItem="dzr-2S-E79" secondAttribute="trailing" id="lAl-He-NBq"/>
+                                                <constraint firstAttribute="bottom" secondItem="dzr-2S-E79" secondAttribute="bottom" constant="2" id="pTd-V9-wVC"/>
+                                                <constraint firstItem="dzr-2S-E79" firstAttribute="leading" secondItem="lXK-mQ-bG0" secondAttribute="leadingMargin" id="sNh-RE-Yes"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="4od-Ph-zx6">
-                                        <rect key="frame" x="0.0" y="336.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="46" id="GWO-Nj-zMr">
+                                        <rect key="frame" x="0.0" y="341.5" width="414" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4od-Ph-zx6" id="wrs-FI-v4h">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GWO-Nj-zMr" id="PkV-AP-mQL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-Wr-z1z">
-                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="n56-GY-gsr">
+                                                    <rect key="frame" x="20" y="2" width="342.5" height="42"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 10:30 AM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk6-JW-2LC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="158.5" height="43.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 10:30 AM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="350-hq-J47">
+                                                            <rect key="frame" x="0.0" y="0.0" width="158.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-jO-ylM">
-                                                            <rect key="frame" x="246.5" y="0.0" width="104" height="43.5"/>
-                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Vincent's/Blessed Sacrament" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp0-QZ-gPI">
+                                                            <rect key="frame" x="0.0" y="18.5" width="225" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGS-I0-3GS">
-                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKa-BI-Vuk">
+                                                    <rect key="frame" x="362.5" y="1.5" width="43.5" height="43.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="43.5" id="Obk-bo-0jU"/>
-                                                        <constraint firstAttribute="height" constant="43.5" id="dmn-Bu-rny"/>
+                                                        <constraint firstAttribute="width" constant="43.5" id="ZUf-uH-UJB"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="vb0-gg-Eer"/>
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
                                                     <connections>
-                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="Smh-Xa-6jy"/>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="HhE-mY-jZh"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sGS-I0-3GS" firstAttribute="centerY" secondItem="wrs-FI-v4h" secondAttribute="centerY" id="2wK-ev-7vr"/>
-                                                <constraint firstItem="l0N-Wr-z1z" firstAttribute="top" secondItem="wrs-FI-v4h" secondAttribute="top" id="MBF-fK-gDv"/>
-                                                <constraint firstAttribute="trailing" secondItem="sGS-I0-3GS" secondAttribute="trailing" id="P1x-G3-nJ5"/>
-                                                <constraint firstItem="sGS-I0-3GS" firstAttribute="leading" secondItem="l0N-Wr-z1z" secondAttribute="trailing" id="U1K-HZ-Zvb"/>
-                                                <constraint firstAttribute="bottom" secondItem="l0N-Wr-z1z" secondAttribute="bottom" id="bXc-YF-qKk"/>
-                                                <constraint firstItem="l0N-Wr-z1z" firstAttribute="leading" secondItem="wrs-FI-v4h" secondAttribute="leadingMargin" id="lPA-Jb-4qN"/>
+                                                <constraint firstAttribute="bottom" secondItem="n56-GY-gsr" secondAttribute="bottom" constant="2" id="4kE-Fo-UfW"/>
+                                                <constraint firstItem="TKa-BI-Vuk" firstAttribute="centerY" secondItem="PkV-AP-mQL" secondAttribute="centerY" id="BMr-RK-V5f"/>
+                                                <constraint firstItem="n56-GY-gsr" firstAttribute="top" secondItem="PkV-AP-mQL" secondAttribute="top" constant="2" id="TSV-O1-Woy"/>
+                                                <constraint firstItem="TKa-BI-Vuk" firstAttribute="leading" secondItem="n56-GY-gsr" secondAttribute="trailing" id="U6E-iq-FI4"/>
+                                                <constraint firstItem="n56-GY-gsr" firstAttribute="leading" secondItem="PkV-AP-mQL" secondAttribute="leadingMargin" id="hub-Im-a6e"/>
+                                                <constraint firstAttribute="trailing" secondItem="TKa-BI-Vuk" secondAttribute="trailing" constant="8" id="hvu-FY-6wL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="hsG-ZB-bAb">
-                                        <rect key="frame" x="0.0" y="380" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="46" id="V4a-Tp-L5G">
+                                        <rect key="frame" x="0.0" y="387.5" width="414" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hsG-ZB-bAb" id="5a6-aW-ZjE">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V4a-Tp-L5G" id="P6Z-dh-yl0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xLO-1u-tR7">
-                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="euq-BA-Eb6">
+                                                    <rect key="frame" x="20" y="2" width="342.5" height="42"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 5:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g03-8I-jBC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="43.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 5:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml5-bA-c4l">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newman House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="734-KT-okR">
-                                                            <rect key="frame" x="218" y="0.0" width="132.5" height="43.5"/>
-                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newman House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi3-v4-WwK">
+                                                            <rect key="frame" x="0.0" y="18.5" width="109" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZE-s8-waf">
-                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIg-ZA-lFZ">
+                                                    <rect key="frame" x="362.5" y="1.5" width="43.5" height="43.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="43.5" id="EiM-1m-ihC"/>
-                                                        <constraint firstAttribute="height" constant="43.5" id="tfT-GE-n7k"/>
+                                                        <constraint firstAttribute="width" constant="43.5" id="YXA-xM-di4"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="gcZ-OZ-aya"/>
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
                                                     <connections>
-                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="G7d-Uf-Tvi"/>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="Cvh-S4-Zyf"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="xLO-1u-tR7" secondAttribute="bottom" id="9sc-Td-q6K"/>
-                                                <constraint firstItem="AZE-s8-waf" firstAttribute="centerY" secondItem="5a6-aW-ZjE" secondAttribute="centerY" id="Smn-7z-FpW"/>
-                                                <constraint firstItem="xLO-1u-tR7" firstAttribute="leading" secondItem="5a6-aW-ZjE" secondAttribute="leadingMargin" id="Z2f-U0-PtU"/>
-                                                <constraint firstItem="xLO-1u-tR7" firstAttribute="top" secondItem="5a6-aW-ZjE" secondAttribute="top" id="ZP4-Rm-mUG"/>
-                                                <constraint firstItem="AZE-s8-waf" firstAttribute="leading" secondItem="xLO-1u-tR7" secondAttribute="trailing" id="blU-NI-ucx"/>
-                                                <constraint firstAttribute="trailing" secondItem="AZE-s8-waf" secondAttribute="trailing" id="btA-5U-tmQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="JIg-ZA-lFZ" secondAttribute="trailing" constant="8" id="5Ad-kh-mHH"/>
+                                                <constraint firstAttribute="bottom" secondItem="euq-BA-Eb6" secondAttribute="bottom" constant="2" id="6rS-gx-fOF"/>
+                                                <constraint firstItem="JIg-ZA-lFZ" firstAttribute="centerY" secondItem="P6Z-dh-yl0" secondAttribute="centerY" id="OfP-u9-OkI"/>
+                                                <constraint firstItem="JIg-ZA-lFZ" firstAttribute="leading" secondItem="euq-BA-Eb6" secondAttribute="trailing" id="ZDT-ZY-olS"/>
+                                                <constraint firstItem="euq-BA-Eb6" firstAttribute="leading" secondItem="P6Z-dh-yl0" secondAttribute="leadingMargin" id="cPJ-5E-6XO"/>
+                                                <constraint firstItem="euq-BA-Eb6" firstAttribute="top" secondItem="P6Z-dh-yl0" secondAttribute="top" constant="2" id="lXk-lG-BgM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="m1H-eh-Mua">
-                                        <rect key="frame" x="0.0" y="423.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="46" id="S4T-PE-VWz">
+                                        <rect key="frame" x="0.0" y="433.5" width="414" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1H-eh-Mua" id="DfX-fN-7KS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S4T-PE-VWz" id="yZB-2c-7ww">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Vb-Zv8">
-                                                    <rect key="frame" x="20" y="0.0" width="350.5" height="43.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="5Gw-co-JU0">
+                                                    <rect key="frame" x="20" y="2" width="342.5" height="42"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 7:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX6-69-WZ7">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="43.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday - 7:00 PM" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UR-In-yUp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="23.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newman House" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vz-vq-Bc4">
-                                                            <rect key="frame" x="218" y="0.0" width="132.5" height="43.5"/>
-                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newman House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-7N-20d">
+                                                            <rect key="frame" x="0.0" y="18.5" width="109" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECs-1V-Xw6">
-                                                    <rect key="frame" x="370.5" y="0.0" width="43.5" height="43.5"/>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRX-pe-cg3">
+                                                    <rect key="frame" x="362.5" y="1.5" width="43.5" height="43.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="43.5" id="5dC-7D-nfk"/>
-                                                        <constraint firstAttribute="height" constant="43.5" id="NPT-gH-zAX"/>
+                                                        <constraint firstAttribute="height" constant="43.5" id="Nrg-Lf-3cc"/>
+                                                        <constraint firstAttribute="width" constant="43.5" id="Wqz-A9-hz3"/>
                                                     </constraints>
                                                     <state key="normal" image="bellunselected"/>
                                                     <state key="selected" image="bellselected"/>
                                                     <connections>
-                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="2PG-MS-4uJ"/>
+                                                        <action selector="notificationButtonToggled:" destination="4i6-jx-I1R" eventType="touchUpInside" id="irh-Mj-ahO"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="ZGq-Vb-Zv8" secondAttribute="bottom" id="GOI-jE-CRJ"/>
-                                                <constraint firstItem="ZGq-Vb-Zv8" firstAttribute="leading" secondItem="DfX-fN-7KS" secondAttribute="leadingMargin" id="GyX-tc-VDU"/>
-                                                <constraint firstItem="ECs-1V-Xw6" firstAttribute="centerY" secondItem="DfX-fN-7KS" secondAttribute="centerY" id="LYH-3f-eyo"/>
-                                                <constraint firstAttribute="trailing" secondItem="ECs-1V-Xw6" secondAttribute="trailing" id="SFD-nq-Ryd"/>
-                                                <constraint firstItem="ZGq-Vb-Zv8" firstAttribute="top" secondItem="DfX-fN-7KS" secondAttribute="top" id="ddo-IO-Gcw"/>
-                                                <constraint firstItem="ECs-1V-Xw6" firstAttribute="leading" secondItem="ZGq-Vb-Zv8" secondAttribute="trailing" id="dve-od-wP4"/>
+                                                <constraint firstItem="uRX-pe-cg3" firstAttribute="centerY" secondItem="yZB-2c-7ww" secondAttribute="centerY" id="15r-I2-3Qw"/>
+                                                <constraint firstItem="5Gw-co-JU0" firstAttribute="top" secondItem="yZB-2c-7ww" secondAttribute="top" constant="2" id="8IB-VB-xsq"/>
+                                                <constraint firstItem="uRX-pe-cg3" firstAttribute="leading" secondItem="5Gw-co-JU0" secondAttribute="trailing" id="OAA-6Z-E6W"/>
+                                                <constraint firstItem="5Gw-co-JU0" firstAttribute="leading" secondItem="yZB-2c-7ww" secondAttribute="leadingMargin" id="fLr-AI-oD6"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Gw-co-JU0" secondAttribute="bottom" constant="2" id="o5G-9z-kCB"/>
+                                                <constraint firstAttribute="trailing" secondItem="uRX-pe-cg3" secondAttribute="trailing" constant="8" id="r24-4V-3XG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -573,7 +573,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                             <tableViewSection id="pwc-aC-rfM">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="L1P-jO-brK" rowHeight="43.5" style="IBUITableViewCellStyleDefault" id="xWQ-9D-o3r">
-                                        <rect key="frame" x="0.0" y="503" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="515.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xWQ-9D-o3r" id="KO2-yg-g2Y">
                                             <rect key="frame" x="0.0" y="0.0" width="382.5" height="43.5"/>
@@ -602,11 +602,11 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                     </tableView>
                     <size key="freeformSize" width="414" height="800"/>
                     <connections>
-                        <outletCollection property="notificationButton" destination="Rlv-V4-laC" collectionClass="NSMutableArray" id="ags-My-Opl"/>
-                        <outletCollection property="notificationButton" destination="kFd-y8-w2O" collectionClass="NSMutableArray" id="Wsv-MW-ZMH"/>
-                        <outletCollection property="notificationButton" destination="sGS-I0-3GS" collectionClass="NSMutableArray" id="OlL-cQ-PAX"/>
-                        <outletCollection property="notificationButton" destination="AZE-s8-waf" collectionClass="NSMutableArray" id="Bem-Wq-Z62"/>
-                        <outletCollection property="notificationButton" destination="ECs-1V-Xw6" collectionClass="NSMutableArray" id="Yfl-ij-sLx"/>
+                        <outletCollection property="notificationButton" destination="Rlv-V4-laC" collectionClass="NSMutableArray" id="74J-1s-UWx"/>
+                        <outletCollection property="notificationButton" destination="oSA-Tn-shB" collectionClass="NSMutableArray" id="RM0-dA-hZN"/>
+                        <outletCollection property="notificationButton" destination="TKa-BI-Vuk" collectionClass="NSMutableArray" id="Wr2-2l-j7f"/>
+                        <outletCollection property="notificationButton" destination="JIg-ZA-lFZ" collectionClass="NSMutableArray" id="qdL-HG-xPb"/>
+                        <outletCollection property="notificationButton" destination="uRX-pe-cg3" collectionClass="NSMutableArray" id="zi3-W2-F5a"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQe-LY-2AJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -820,14 +820,14 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventsTableViewCell" id="2qM-8l-rOP" customClass="EventsTableViewCell" customModule="BU_Newman_House" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2qM-8l-rOP" id="qu7-fd-sjL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="67.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sWG-Go-jNm">
-                                                    <rect key="frame" x="0.0" y="4" width="65" height="60"/>
+                                                    <rect key="frame" x="0.0" y="14" width="65" height="59.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-o8-Bvu">
                                                             <rect key="frame" x="0.0" y="0.0" width="65" height="40"/>
@@ -839,7 +839,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-1y-dXa">
-                                                            <rect key="frame" x="0.0" y="40" width="65" height="20"/>
+                                                            <rect key="frame" x="0.0" y="40" width="65" height="19.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
                                                             <color key="textColor" name="systemText"/>
                                                             <nil key="highlightedColor"/>
@@ -850,16 +850,16 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tvg-uH-kLJ">
-                                                    <rect key="frame" x="65" y="10" width="289" height="47.5"/>
+                                                    <rect key="frame" x="65" y="10" width="289" height="67"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fifty-Seventh Commencement" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qm6-47-zui">
-                                                            <rect key="frame" x="0.0" y="0.0" width="289" height="21.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="289" height="41"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
                                                             <color key="textColor" name="systemText"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0R-lP-6R9">
-                                                            <rect key="frame" x="0.0" y="26.5" width="289" height="21"/>
+                                                            <rect key="frame" x="0.0" y="46" width="289" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="02c-Bq-83O"/>
                                                             </constraints>
@@ -870,7 +870,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRC-nx-F2Z">
-                                                    <rect key="frame" x="354" y="6.5" width="55" height="55"/>
+                                                    <rect key="frame" x="354" y="16" width="55" height="55"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="55" id="KjL-mk-5rN"/>
                                                         <constraint firstAttribute="height" constant="55" id="cGc-kw-R6l"/>
@@ -961,7 +961,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXA-l3-hKL">
                                     <rect key="frame" x="8" y="292.5" width="398" height="291.5"/>
-                                    <mutableString key="text">Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in dolor ac nisl laoreet rhoncus. Nulla facilisi. Proin efficitur enim eget nisl vehicula, ac molestie nibh volutpat. Quisque egestas, metus et convallis condimentum, nisl felis tristique magna, sed ultrices nisl ligula nec tortor. Pellentesque rutrum velit ac lacus ullamcorper, nec auctor tortor pulvinar. Donec sed nibh leo. In dui ligula, dignissim nec quam ut, semper pellentesque lectus. In pharetra tellus interdum nibh malesuada cursus. Sed ullamcorper lorem gravida accumsan luctus. Vivamus dignissim accumsan turpis vel pellentesque. Sed mollis nunc justo, ac fermentum neque faucibus eu. Sed auctor blandit rhoncus. </mutableString>
+                                    <string key="text">Ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in dolor ac nisl laoreet rhoncus. Nulla facilisi. Proin efficitur enim eget nisl vehicula, ac molestie nibh volutpat. Quisque egestas, metus et convallis condimentum, nisl felis tristique magna, sed ultrices nisl ligula nec tortor. Pellentesque rutrum velit ac lacus ullamcorper, nec auctor tortor pulvinar. Donec sed nibh leo. In dui ligula, dignissim nec quam ut, semper pellentesque lectus. In pharetra tellus interdum nibh malesuada cursus. Sed ullamcorper lorem gravida accumsan luctus. Vivamus dignissim accumsan turpis vel pellentesque. Sed mollis nunc justo, ac fermentum neque faucibus eu. Sed auctor blandit rhoncus. </string>
                                     <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -1046,14 +1046,14 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="addAnotherCell" textLabel="7iL-Sw-cd8" style="IBUITableViewCellStyleDefault" id="RBl-dy-gN2">
-                                        <rect key="frame" x="0.0" y="101" width="414" height="45.5"/>
+                                        <rect key="frame" x="0.0" y="101" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RBl-dy-gN2" id="Rdy-zb-Po3">
-                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="45.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="+ Add Another" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7iL-Sw-cd8">
-                                                    <rect key="frame" x="20" y="0.0" width="354.5" height="45.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="354.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="19"/>
                                                     <color key="textColor" name="colorDarkGray"/>
@@ -1123,16 +1123,16 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vAn-uY-jjk">
-                                                    <rect key="frame" x="110" y="20" width="244.5" height="66.5"/>
+                                                    <rect key="frame" x="110" y="22" width="244.5" height="62"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PnV-cN-0nw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="244.5" height="22.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="244.5" height="21.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70 Seminary Avenue Binghamton, NY 13905" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKx-Xz-xtP">
-                                                            <rect key="frame" x="0.0" y="26.5" width="244.5" height="40"/>
+                                                            <rect key="frame" x="0.0" y="25.5" width="244.5" height="36.5"/>
                                                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1349,7 +1349,7 @@ All other Masses are held at St. Vincent de Paul Blessed Sacrament Parish Church
             <color red="0.0" green="0.25490196078431371" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="superLightGray">
-            <color red="0.92538958787918091" green="0.92554813623428345" blue="0.92537957429885864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92500001192092896" green="0.92599999904632568" blue="0.92500001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="systemBackground">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
