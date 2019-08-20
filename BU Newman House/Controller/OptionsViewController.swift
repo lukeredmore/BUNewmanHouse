@@ -40,7 +40,7 @@ class OptionsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     //MARK: Delegate Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        alertList.count + 1
+        return alertList.count + 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
@@ -53,7 +53,10 @@ class OptionsViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "Calendar Alerts"
+        return "Calendar Alerts"
+    }
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "Change the times at which you want to be notified of upcoming events. Note: These changes will only impact future event alerts you set; current ones will not be changed."
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
