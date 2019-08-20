@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 protocol SpiritualityTableViewDelegate : class {
     func tableViewDidAppear()
@@ -53,6 +54,28 @@ class SpiritualityTableViewController: UITableViewController {
             headerView.frame = frame
 
             tableView.tableHeaderView = headerView
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch tableView.cellForRow(at: indexPath)?.textLabel?.text {
+        case "The Bible":
+            presentLinkInSafariView("https://www.biblegateway.com")
+        case "USCCB":
+            presentLinkInSafariView("http://www.usccb.org")
+        case "Pray As You Go":
+            presentLinkInSafariView("https://pray-as-you-go.org")
+        default:
+            break
+        }
+    }
+    
+    func presentLinkInSafariView(_ link: String) {
+        if let url = URL(string: link) {
+            let safariView = SFSafariViewController(url: url)
+            safariView.preferredBarTintColor = UIColor(named: "colorPrimaryDark")!
+            safariView.preferredControlTintColor = UIColor(named: "systemTextLight")!
+            self.present(safariView, animated: true, completion: nil)
         }
     }
     
