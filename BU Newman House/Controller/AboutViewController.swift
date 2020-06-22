@@ -88,7 +88,7 @@ class AboutViewController: UIViewController, UITableViewDataSource, UITableViewD
             performSegue(withIdentifier: "showMapSegue", sender: self)
         } else if indexPath == IndexPath(row: 0, section: 1) {
             UIApplication.shared.open(URL(string: "tel://6077987202")!)
-        } else if indexPath == IndexPath(row:1, section: 1) {
+        } else if indexPath == IndexPath(row: 1, section: 1) {
             AboutMailDelegate(parent: self).presentMailVC()
         }
     }

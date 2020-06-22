@@ -53,17 +53,20 @@ class EventsViewController: UIViewController, UITableViewDataSource, UITableView
     
     //MARK: TableView Methods
     func setupTable(forModelArray modelArray : [[EventsModel]]?) {
+        DispatchQueue.main.async {
         if modelArray != nil, modelArray!.count > 0 {
             self.eventsArray = modelArray
-            
-            DispatchQueue.main.async {
-                self.tableView.dataSource = self
-                self.tableView.delegate = self
-                self.tableView.refreshControl = self.refreshControl
-                self.tableView.reloadData()
-                self.loadingSymbol.stopAnimating()
-                self.refreshControl.endRefreshing()
-            }
+            self.tableView.isHidden = false
+            self.tableView.dataSource = self
+            self.tableView.delegate = self
+            self.tableView.refreshControl = self.refreshControl
+            self.tableView.reloadData()
+        } else if (modelArray!.count == 0) {
+            self.eventsArray = modelArray
+            self.tableView.isHidden = true
+        }
+        self.loadingSymbol.stopAnimating()
+        self.refreshControl.endRefreshing()
         }
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

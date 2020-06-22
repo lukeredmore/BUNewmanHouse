@@ -11,6 +11,7 @@ import SwiftyJSON
 
 class EventsRetriever: NSObject, PendingNotificationDelegate {
     func configureAlerts(forIDList idList: [String]) {
+        print("configuring")
         getEventsDataFromOnline(forIDList : idList)
     }
     
@@ -48,7 +49,7 @@ class EventsRetriever: NSObject, PendingNotificationDelegate {
             print("Attempting to retrieve stored Events data.")
             if let eventsArrayTimeString = preferences.string(forKey: "eventsArrayTime"),
                 let json = preferences.value(forKey:"eventsArray") as? Data { //If both events values are defined
-                let eventsArrayTime = eventsArrayTimeString.toDateWithTime()! + 3600 //Time one hour in future
+                let eventsArrayTime = eventsArrayTimeString.toDateWithTime()! + 5//3600 //Time one hour in future
                 if eventsArrayTime > Date() {
                     print("Up-to-date Events data found, no need to look online.")
                     return completion(try! PropertyListDecoder().decode([[EventsModel]].self, from: json))
@@ -68,13 +69,13 @@ class EventsRetriever: NSObject, PendingNotificationDelegate {
         fmt.dateFormat = "yyyy-MM-dd"
         let endDate = Calendar.current.date(byAdding: DateComponents(year: 1), to: Date())!
         let tag = "?start=\(fmt.string(from: Date()))&end=\(fmt.string(from: endDate))"
-        print(tag)
         if let url = URL(string: "https://newman.breezechms.com/api/events\(tag)") {
             var request = URLRequest(url: url)
             request.allHTTPHeaderFields = ["Content-Type": "application/json","api-key" : PrivateAPIKeys.BREEZE_API_KEY]
             request.httpMethod = "GET"
             let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
                 if response as? HTTPURLResponse != nil && data != nil {
+                    print("Fine")
                     self.parseEventsData(forJSON: JSON(data!), withIDList: idList)
                     self.retrieveEventsArray()
                 } else if error != nil {
@@ -100,7 +101,8 @@ class EventsRetriever: NSObject, PendingNotificationDelegate {
                 let startTime = dateTimeFormatter.date(from: "\(json[i]["start_datetime"])")
                 let endTime = dateTimeFormatter.date(from: "\(json[i]["end_datetime"])")
                 let id = "\(json[i]["id"])"
-                
+                let weekdayInt = Calendar.current.component(.weekday, from: startTime ?? Date(timeIntervalSince1970: 0))
+                let weekday = weekdayInt != 1 && weekdayInt != 7
                 
                 var shouldNotifyThisEvent = false
                 if let idIndex = mutableIDList.firstIndex(of: id) {
@@ -108,7 +110,7 @@ class EventsRetriever: NSObject, PendingNotificationDelegate {
                     mutableIDList.remove(at: idIndex)
                 }
                
-               if !title.contains("Mass") {
+                if title.lowercased() != "Mass" || weekday {
                     eventsArrayToAppend.append(EventsModel(title: title, startTime: startTime, endTime: endTime, id: id, buttonSelected: shouldNotifyThisEvent))
                 }
                 if i < json.count - 1 {
@@ -129,9 +131,7 @@ class EventsRetriever: NSObject, PendingNotificationDelegate {
         for unusedID in mutableIDList {
             notificationController.removeNotification(withID: unusedID)
         }
-        if eventsArray.count > 0 {
-            addObjectArrayToUserDefaults(eventsArray)
-        }
+        addObjectArrayToUserDefaults(eventsArray)
 
     }
     

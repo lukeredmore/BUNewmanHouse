@@ -15,17 +15,13 @@ class MapViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
     
-    var givenLatitude : Double = 0.000
-    var givenLongitude : Double = 0.000
-    let locationDictionary : [String:[Double]] = ["Seton Catholic Central":[42.098485, -75.928579], "All Saints School":[42.100491, -76.050103], "St. John's School":[42.092430, -75.908342], "St. James School":[42.115512, -75.969542]]
-    let fullSchoolsArray = ["Seton Catholic Central","St. John's School","All Saints School","St. James School"]
+    let givenLatitude : Double = 42.089240
+    let givenLongitude : Double = -75.959830
     
     
     //MARK: View Control
     override func viewWillAppear(_ animated: Bool) {
-        let header = fullSchoolsArray[0]
-        givenLatitude = locationDictionary[header]![0]
-        givenLongitude = locationDictionary[header]![1]
+        let header = "Newman House"
         let initialLocation = CLLocation(latitude: givenLatitude, longitude: givenLongitude)
                 centerMapOnLocation(initialLocation)
 

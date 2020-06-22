@@ -72,6 +72,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             UIApplication.shared.open(webURL!)
         }
     }
+    @IBAction func youtubeButtonPressed(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.youtube.com/channel/UCFjk26AmTYiA2K_Ql-ELRZw")!)
+
+    }
     @IBAction func donateButtonPressed(_ sender: Any) {
         if let webURL = URL(string: "https://newmanbinghamton.weshareonline.org/") {
             let safariView = SFSafariViewController(url: webURL)
